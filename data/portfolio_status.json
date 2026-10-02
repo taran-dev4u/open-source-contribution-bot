@@ -4,9 +4,9 @@
     "pr": 6879,
     "title": "Filter feasible trials when selecting best_trial in get_all_study_summaries",
     "state": "OPEN",
-    "review": "None",
+    "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "timestamp": "2026-10-02T08:05:52.431991+00:00"
+    "timestamp": "2026-10-02T16:08:55.615848+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
@@ -15,7 +15,7 @@
     "state": "OPEN",
     "review": "None",
     "fork_synced": false,
-    "timestamp": "2026-10-02T08:05:52.432000+00:00"
+    "timestamp": "2026-10-02T16:08:55.615862+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -24,7 +24,7 @@
     "state": "OPEN",
     "review": "None",
     "fork_synced": false,
-    "timestamp": "2026-10-02T08:05:52.432006+00:00"
+    "timestamp": "2026-10-02T16:08:55.615872+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -33,7 +33,7 @@
     "state": "OPEN",
     "review": "None",
     "fork_synced": false,
-    "timestamp": "2026-10-02T08:05:52.432011+00:00"
+    "timestamp": "2026-10-02T16:08:55.615882+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -42,7 +42,7 @@
     "state": "OPEN",
     "review": "None",
     "fork_synced": false,
-    "timestamp": "2026-10-02T08:05:52.432017+00:00"
+    "timestamp": "2026-10-02T16:08:55.615889+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -51,6 +51,6 @@
     "state": "OPEN",
     "review": "None",
     "fork_synced": false,
-    "timestamp": "2026-10-02T08:05:52.432021+00:00"
+    "timestamp": "2026-10-02T16:08:55.615894+00:00"
   }
 ]

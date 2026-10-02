@@ -1,0 +1,56 @@
+[
+  {
+    "repo": "optuna/optuna",
+    "pr": 6879,
+    "title": "Filter feasible trials when selecting best_trial in get_all_study_summaries",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "timestamp": "2026-10-02T00:08:46.399013+00:00"
+  },
+  {
+    "repo": "Rekin226/aquascope",
+    "pr": 485,
+    "title": "feat(collectors): map UK EA quality flags to harmonized schema",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "timestamp": "2026-10-02T00:08:46.399051+00:00"
+  },
+  {
+    "repo": "aeon-toolkit/aeon",
+    "pr": 3828,
+    "title": "[BUG] Avoid in-place series swap in DTW distance to support mixed dtypes and fix Itakura asymmetry",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "timestamp": "2026-10-02T00:08:46.399075+00:00"
+  },
+  {
+    "repo": "FlexMeasures/flexmeasures",
+    "pr": 2448,
+    "title": "feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416)",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "timestamp": "2026-10-02T00:08:46.399098+00:00"
+  },
+  {
+    "repo": "FlexMeasures/flexmeasures",
+    "pr": 2484,
+    "title": "fix(app): avoid reconfiguring root logging in test runs to preserve caplog",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "timestamp": "2026-10-02T00:08:46.399122+00:00"
+  },
+  {
+    "repo": "SeitaBV/timely-beliefs",
+    "pr": 247,
+    "title": "fix: retain event_resolution on BeliefsSeries conversion (#220)",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "timestamp": "2026-10-02T00:08:46.399139+00:00"
+  }
+]

@@ -24,6 +24,10 @@ dev = [
 line-length = 120
 target-version = "py311"
 
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["BLE001", "S110", "PLW1510", "E501"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = "test_*.py"

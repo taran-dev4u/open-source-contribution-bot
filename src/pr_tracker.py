@@ -4,11 +4,10 @@ from __future__ import annotations
 
 import logging
 from dataclasses import dataclass
-from typing import Any
+
 import httpx
 
-from src.config import MonitoredPR
-from src.config import config
+from src.config import MonitoredPR, config
 from src.notifier import send_push_notification
 
 logger = logging.getLogger(__name__)
@@ -26,12 +25,13 @@ class PRStatusResult:
     review_decision: str | None
     fork_synced: bool = False
     branch_deleted: bool = False
+    ai_analysis: str | None = None
     error: str | None = None
 
 
 class PRTracker:
     def __init__(self, token: str | None = None):
-        self.token = token or config.gh_token
+        self.token = token if token is not None else config.gh_token
         self.headers = {
             "Accept": "application/vnd.github.v3+json",
             "User-Agent": "open-source-contribution-bot/0.1.0",
@@ -69,6 +69,7 @@ class PRTracker:
                 # Fetch reviews if open
                 review_decision = None
                 latest_comment = None
+                ai_analysis = None
                 if state == "OPEN":
                     reviews_resp = client.get(f"{url}/reviews")
                     if reviews_resp.status_code == 200:
@@ -76,6 +77,33 @@ class PRTracker:
                         if reviews:
                             latest_review = reviews[-1]
                             review_decision = latest_review.get("state")
+                            review_body = latest_review.get("body", "")
+
+                            if review_decision == "CHANGES_REQUESTED":
+                                send_push_notification(
+                                    title=f"⚠️ Changes Requested: {pr.upstream_repo}#{pr.pr_number}",
+                                    message=f"Maintainer requested changes on '{title}'.\n{review_body[:200]}",
+                                    priority="high",
+                                    tags=["warning", "pencil2"],
+                                )
+                                comments_list = [review_body] if review_body else []
+                                comments_resp = client.get(f"{url}/comments")
+                                if comments_resp.status_code == 200:
+                                    for c in comments_resp.json()[-5:]:
+                                        if c.get("body"):
+                                            comments_list.append(c["body"])
+
+                                from src.ai_advisor import AIAdvisor
+
+                                advisor = AIAdvisor()
+                                if advisor.is_available:
+                                    ai_analysis = advisor.analyze_review_feedback(
+                                        pr.upstream_repo,
+                                        pr.pr_number,
+                                        title,
+                                        review_decision,
+                                        comments_list,
+                                    )
 
                 result = PRStatusResult(
                     pr=pr,
@@ -86,6 +114,7 @@ class PRTracker:
                     comments_count=comments_count,
                     latest_comment=latest_comment,
                     review_decision=review_decision,
+                    ai_analysis=ai_analysis,
                 )
 
                 if state == "MERGED":

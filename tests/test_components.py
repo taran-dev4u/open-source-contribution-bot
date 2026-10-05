@@ -2,12 +2,9 @@
 
 from __future__ import annotations
 
-from unittest.mock import MagicMock
-from unittest.mock import patch
-import pytest
+from unittest.mock import MagicMock, patch
 
-from src.issue_scout import CandidateIssue
-from src.issue_scout import IssueScout
+from src.issue_scout import CandidateIssue, IssueScout
 from src.notifier import send_push_notification
 
 
@@ -76,12 +73,11 @@ def test_notifier_without_topic():
 
 
 def test_notifier_with_topic():
-    with patch("src.config.config.ntfy_topic", "test-topic"):
-        with patch("httpx.post") as mock_post:
-            mock_resp = MagicMock()
-            mock_resp.raise_for_status.return_value = None
-            mock_post.return_value = mock_resp
+    with patch("src.config.config.ntfy_topic", "test-topic"), patch("httpx.post") as mock_post:
+        mock_resp = MagicMock()
+        mock_resp.raise_for_status.return_value = None
+        mock_post.return_value = mock_resp
 
-            result = send_push_notification("Test Alert", "PR merged!", priority="high", tags=["tada"])
-            assert result is True
-            mock_post.assert_called_once()
+        result = send_push_notification("Test Alert", "PR merged!", priority="high", tags=["tada"])
+        assert result is True
+        mock_post.assert_called_once()

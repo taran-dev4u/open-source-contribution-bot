@@ -2,13 +2,10 @@
 
 from __future__ import annotations
 
-from unittest.mock import MagicMock
-from unittest.mock import patch
-import pytest
+from unittest.mock import MagicMock, patch
 
 from src.config import MonitoredPR
-from src.pr_tracker import PRStatusResult
-from src.pr_tracker import PRTracker
+from src.pr_tracker import PRStatusResult, PRTracker
 
 
 def test_monitored_pr_dataclass():

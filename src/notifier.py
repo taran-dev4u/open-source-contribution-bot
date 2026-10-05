@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+
 import httpx
 
 from src.config import config

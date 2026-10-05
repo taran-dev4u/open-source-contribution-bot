@@ -5,6 +5,7 @@ from __future__ import annotations
 import logging
 from dataclasses import dataclass
 from typing import Any
+
 import httpx
 
 from src.config import config
@@ -28,7 +29,7 @@ class CandidateIssue:
 
 class IssueScout:
     def __init__(self, token: str | None = None):
-        self.token = token or config.gh_token
+        self.token = token if token is not None else config.gh_token
         self.headers = {
             "Accept": "application/vnd.github.v3+json",
             "User-Agent": "open-source-contribution-bot/0.1.0",
@@ -96,7 +97,7 @@ class IssueScout:
                             number=issue_num,
                             title=item.get("title", ""),
                             url=item.get("html_url", ""),
-                            labels=[l["name"] for l in item.get("labels", []) if isinstance(l, dict)],
+                            labels=[lbl["name"] for lbl in item.get("labels", []) if isinstance(lbl, dict)],
                             created_at=item.get("created_at", ""),
                             comments_count=item.get("comments", 0),
                             is_uncontested=is_uncontested,

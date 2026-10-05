@@ -3,8 +3,21 @@
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass
-from dataclasses import field
+import shutil
+import subprocess
+from dataclasses import dataclass, field
+
+
+def _get_default_token() -> str:
+    token = os.getenv("GH_PAT") or os.getenv("GITHUB_TOKEN", "")
+    if not token and shutil.which("gh"):
+        try:
+            res = subprocess.run(["gh", "auth", "token"], capture_output=True, text=True, timeout=5)
+            if res.returncode == 0:
+                token = res.stdout.strip()
+        except Exception:
+            pass
+    return token
 
 
 @dataclass(frozen=True)
@@ -16,9 +29,17 @@ class MonitoredPR:
     default_branch: str = "main"
 
 
+@dataclass(frozen=True)
+class MonitoredFork:
+    fork_repo: str
+    upstream_repo: str
+    branch: str = "main"
+
+
 @dataclass
 class BotConfig:
-    gh_token: str = field(default_factory=lambda: os.getenv("GH_PAT") or os.getenv("GITHUB_TOKEN", ""))
+    gh_token: str = field(default_factory=_get_default_token)
+    gemini_api_key: str = field(default_factory=lambda: os.getenv("GEMINI_API_KEY", ""))
     ntfy_topic: str = field(default_factory=lambda: os.getenv("NTFY_TOPIC", ""))
     user_login: str = "taran-dev4u"
 
@@ -78,6 +99,18 @@ class BotConfig:
             "aeon-toolkit/aeon",
             "FlexMeasures/flexmeasures",
             "SeitaBV/timely-beliefs",
+        ]
+    )
+
+    monitored_forks: list[MonitoredFork] = field(
+        default_factory=lambda: [
+            MonitoredFork("taran-dev4u/aquascope", "Rekin226/aquascope", "main"),
+            MonitoredFork("taran-dev4u/flexmeasures", "FlexMeasures/flexmeasures", "main"),
+            MonitoredFork("taran-dev4u/optuna", "optuna/optuna", "master"),
+            MonitoredFork("taran-dev4u/aeon", "aeon-toolkit/aeon", "main"),
+            MonitoredFork("taran-dev4u/timely-beliefs", "SeitaBV/timely-beliefs", "main"),
+            MonitoredFork("taran-dev4u/Automodel", "NVIDIA-NeMo/Automodel", "main"),
+            MonitoredFork("taran-dev4u/docling", "docling-project/docling", "main"),
         ]
     )
 

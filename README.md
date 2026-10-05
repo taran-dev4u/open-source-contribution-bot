@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-05 12:07:35 UTC`
+- **Last Cloud Execution:** `2026-10-05 13:57:09 UTC`
 - **Active Monitored Pull Requests:** `6`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -52,8 +52,8 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `Rekin226/aquascope` | [#473](https://github.com/Rekin226/aquascope/issues/473) | Audit Registry Attribution Against First-Party Terms | `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#443](https://github.com/Rekin226/aquascope/issues/443) | Say what the Archive is: 45,919 catalogued and ~1,000 mirrored, stated the same way everywhere | `documentation` `help wanted` `good first issue` |
+| `Rekin226/aquascope` | [#498](https://github.com/Rekin226/aquascope/issues/498) | collector-health: bom station catalog failed in the weekly harvest | `help wanted` `collector-health` |
 | `Rekin226/aquascope` | [#318](https://github.com/Rekin226/aquascope/issues/318) | Blocked: New collector: Northern Ireland (DfI Rivers water levels) | `enhancement` `help wanted` `new-collector` |
-| `Rekin226/aquascope` | [#449](https://github.com/Rekin226/aquascope/issues/449) | The scheduled harvest has published nothing for two weeks, and nothing says so | `bug` `help wanted` |
 | `NVIDIA-NeMo/Automodel` | [#533](https://github.com/NVIDIA-NeMo/Automodel/issues/533) | Make StatefulDataloader be DP-aware | `enhancement` `good first issue` |
 | `NVIDIA-NeMo/Automodel` | [#2462](https://github.com/NVIDIA-NeMo/Automodel/issues/2462) | Support MiMo-V2.5-Pro | `enhancement` `good first issue` |
 | `docling-project/docling` | [#890](https://github.com/docling-project/docling/issues/890) | Docling on n8n nodes | `enhancement` `help wanted` `triage/close-stale` |

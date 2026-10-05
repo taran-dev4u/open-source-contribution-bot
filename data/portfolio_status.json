@@ -7,7 +7,7 @@
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-05T18:07:08.338807+00:00"
+    "timestamp": "2026-10-05T18:26:36.775013+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
@@ -16,8 +16,8 @@
     "state": "OPEN",
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": null,
-    "timestamp": "2026-10-05T18:07:08.338856+00:00"
+    "ai_analysis": "### 1. Core Issue / Request\nThe quality mapping needs to depend strictly on the `quality` field instead of factoring in `completeness` (which was incorrectly downgrading older digitised records to `estimated`). Test fixtures must be updated to use the live API vocabulary (removing `Checked`/`Rejected`), and the mapping needs to be documented in `docs/data_sources.md`.\n\n---\n\n### 2. Minimal Code & Test Modifications\n\n#### Mapping Implementation (e.g., `aquascope/collectors/ea.py`)\nRemove completeness checks from the harmonization logic and map directly:\n\n```python\nEA_QUALITY_MAP = {\n    \"Good\": \"approved\",\n    \"Unchecked\": \"provisional\",\n    \"Estimated\": \"estimated\",\n    \"Suspect\": \"suspect\",\n    \"Missing\": \"unknown\",\n}\n\ndef map_ea_quality(quality: str | None) -> str:\n    return EA_QUALITY_MAP.get(quality, \"unknown\")\n\n# In the record parser:\nharmonized_quality = map_ea_quality(raw_quality)\n# Keep completeness and counts purely in quality_raw:\nquality_raw = {\n    \"quality\": raw_quality,\n    \"completeness\": raw_completeness,\n    \"valid\": valid_count,\n    \"invalid\": invalid_count,\n    \"missing\": missing_count,\n}\n```\n\n#### Test Fixtures (e.g., `tests/collectors/test_ea.py`)\nRemove test cases asserting `\"Checked\"` or `\"Rejected\"`, and assert that `Incomplete` + `Good` maps to `approved`:\n\n```python\n@pytest.mark.parametrize(\n    (\"quality\", \"completeness\", \"expected_harmonized\"),\n    [\n        (\"Good\", \"Complete\", \"approved\"),\n        (\"Good\", \"Incomplete\", \"approved\"),\n        (\"Unchecked\", \"Incomplete\", \"provisional\"),\n        (\"Estimated\", \"Complete\", \"estimated\"),\n        (\"Suspect\", \"Complete\", \"suspect\"),\n        (\"Missing\", \"Incomplete\", \"unknown\"),\n    ],\n)\ndef test_ea_quality_mapping(quality, completeness, expected_harmonized):\n    record = parse_ea_reading({\"quality",
+    "timestamp": "2026-10-05T18:26:36.775079+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -27,7 +27,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-05T18:07:08.338874+00:00"
+    "timestamp": "2026-10-05T18:26:36.775113+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-05T18:07:08.338891+00:00"
+    "timestamp": "2026-10-05T18:26:36.775151+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-05T18:07:08.338911+00:00"
+    "timestamp": "2026-10-05T18:26:36.775179+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -57,6 +57,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-05T18:07:08.338931+00:00"
+    "timestamp": "2026-10-05T18:26:36.775205+00:00"
   }
 ]

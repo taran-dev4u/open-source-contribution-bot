@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-05 18:07:16 UTC`
+- **Last Cloud Execution:** `2026-10-05 18:26:44 UTC`
 - **Active Monitored Pull Requests:** `6`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -28,6 +28,65 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `FlexMeasures/flexmeasures` | [#2448](https://github.com/FlexMeasures/flexmeasures/pull/2448) | feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `SeitaBV/timely-beliefs` | [#247](https://github.com/SeitaBV/timely-beliefs/pull/247) | fix: retain event_resolution on BeliefsSeries conversion (#220) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+
+### 🤖 Gemini AI Review Advisories
+
+#### `Rekin226/aquascope#485`: feat(collectors): map UK EA quality flags to harmonized schema
+
+```markdown
+### 1. Core Issue / Request
+The quality mapping needs to depend strictly on the `quality` field instead of factoring in `completeness` (which was incorrectly downgrading older digitised records to `estimated`). Test fixtures must be updated to use the live API vocabulary (removing `Checked`/`Rejected`), and the mapping needs to be documented in `docs/data_sources.md`.
+
+---
+
+### 2. Minimal Code & Test Modifications
+
+#### Mapping Implementation (e.g., `aquascope/collectors/ea.py`)
+Remove completeness checks from the harmonization logic and map directly:
+
+```python
+EA_QUALITY_MAP = {
+    "Good": "approved",
+    "Unchecked": "provisional",
+    "Estimated": "estimated",
+    "Suspect": "suspect",
+    "Missing": "unknown",
+}
+
+def map_ea_quality(quality: str | None) -> str:
+    return EA_QUALITY_MAP.get(quality, "unknown")
+
+# In the record parser:
+harmonized_quality = map_ea_quality(raw_quality)
+# Keep completeness and counts purely in quality_raw:
+quality_raw = {
+    "quality": raw_quality,
+    "completeness": raw_completeness,
+    "valid": valid_count,
+    "invalid": invalid_count,
+    "missing": missing_count,
+}
+```
+
+#### Test Fixtures (e.g., `tests/collectors/test_ea.py`)
+Remove test cases asserting `"Checked"` or `"Rejected"`, and assert that `Incomplete` + `Good` maps to `approved`:
+
+```python
+@pytest.mark.parametrize(
+    ("quality", "completeness", "expected_harmonized"),
+    [
+        ("Good", "Complete", "approved"),
+        ("Good", "Incomplete", "approved"),
+        ("Unchecked", "Incomplete", "provisional"),
+        ("Estimated", "Complete", "estimated"),
+        ("Suspect", "Complete", "suspect"),
+        ("Missing", "Incomplete", "unknown"),
+    ],
+)
+def test_ea_quality_mapping(quality, completeness, expected_harmonized):
+    record = parse_ea_reading({"quality
+```
+
 
 ---
 

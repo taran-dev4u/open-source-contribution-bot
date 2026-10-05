@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-05 18:26:44 UTC`
+- **Last Cloud Execution:** `2026-10-05 21:26:42 UTC`
 - **Active Monitored Pull Requests:** `6`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -31,60 +31,55 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ### 🤖 Gemini AI Review Advisories
 
-#### `Rekin226/aquascope#485`: feat(collectors): map UK EA quality flags to harmonized schema
+#### `optuna/optuna#6879`: Filter feasible trials when selecting best_trial in get_all_study_summaries
 
 ```markdown
 ### 1. Core Issue / Request
-The quality mapping needs to depend strictly on the `quality` field instead of factoring in `completeness` (which was incorrectly downgrading older digitised records to `estimated`). Test fixtures must be updated to use the live API vocabulary (removing `Checked`/`Rejected`), and the mapping needs to be documented in `docs/data_sources.md`.
+The maintainer wants to avoid unnecessary branching by filtering infeasible trials directly when `completed_trials` is initialized, relying on the existing empty-list check to set `best_trial = None`. They also requested removing the new test file and validating the behavior via a reproduction script instead.
 
 ---
 
-### 2. Minimal Code & Test Modifications
+### 2. Minimal Code / Test Modification
 
-#### Mapping Implementation (e.g., `aquascope/collectors/ea.py`)
-Remove completeness checks from the harmonization logic and map directly:
+**Code Change (`optuna/study/_study_summary.py` or equivalent storage module):**
+
+Replace the existing `completed_trials` comprehension and remove any newly added infeasibility checks/branches:
 
 ```python
-EA_QUALITY_MAP = {
-    "Good": "approved",
-    "Unchecked": "provisional",
-    "Estimated": "estimated",
-    "Suspect": "suspect",
-    "Missing": "unknown",
-}
+# Before
+completed_trials = [t for t in all_trials if t.state == TrialState.COMPLETE]
 
-def map_ea_quality(quality: str | None) -> str:
-    return EA_QUALITY_MAP.get(quality, "unknown")
-
-# In the record parser:
-harmonized_quality = map_ea_quality(raw_quality)
-# Keep completeness and counts purely in quality_raw:
-quality_raw = {
-    "quality": raw_quality,
-    "completeness": raw_completeness,
-    "valid": valid_count,
-    "invalid": invalid_count,
-    "missing": missing_count,
-}
+# After
+completed_trials = _get_feasible_trials(
+    [t for t in all_trials if t.state == TrialState.COMPLETE]
+)
 ```
 
-#### Test Fixtures (e.g., `tests/collectors/test_ea.py`)
-Remove test cases asserting `"Checked"` or `"Rejected"`, and assert that `Incomplete` + `Good` maps to `approved`:
+**Test Cleanup:**
+- Delete the added test file: `git rm <path/to/new_test_file.py>`
+- Run a quick inline reproduction script to confirm that a study with only infeasible `COMPLETE` trials sets `summary.best_trial = None`:
 
 ```python
-@pytest.mark.parametrize(
-    ("quality", "completeness", "expected_harmonized"),
-    [
-        ("Good", "Complete", "approved"),
-        ("Good", "Incomplete", "approved"),
-        ("Unchecked", "Incomplete", "provisional"),
-        ("Estimated", "Complete", "estimated"),
-        ("Suspect", "Complete", "suspect"),
-        ("Missing", "Incomplete", "unknown"),
-    ],
-)
-def test_ea_quality_mapping(quality, completeness, expected_harmonized):
-    record = parse_ea_reading({"quality
+import optuna
+from optuna.study._study_summary import get_all_study_summaries
+
+def objective(trial):
+    trial.set_user_attr("constraint", [1.0])  # Infeasible constraint (> 0)
+    return 1.0
+
+study = optuna.create_study()
+study.optimize(objective, n_trials=2)
+
+summaries = get_all_study_summaries(study._storage)
+assert summaries[0].best_trial is None
+print("Verified: best_trial is None when all complete trials are infeasible.")
+```
+
+---
+
+### 3. Developer Reply Draft
+
+Updated the PR to filter `completed_trials` directly with `_get_feasible_trials`, stripped out the extra branching, and removed
 ```
 
 

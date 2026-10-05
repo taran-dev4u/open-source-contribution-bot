@@ -6,8 +6,8 @@
     "state": "OPEN",
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": null,
-    "timestamp": "2026-10-05T18:26:36.775013+00:00"
+    "ai_analysis": "### 1. Core Issue / Request\nThe maintainer wants to avoid unnecessary branching by filtering infeasible trials directly when `completed_trials` is initialized, relying on the existing empty-list check to set `best_trial = None`. They also requested removing the new test file and validating the behavior via a reproduction script instead.\n\n---\n\n### 2. Minimal Code / Test Modification\n\n**Code Change (`optuna/study/_study_summary.py` or equivalent storage module):**\n\nReplace the existing `completed_trials` comprehension and remove any newly added infeasibility checks/branches:\n\n```python\n# Before\ncompleted_trials = [t for t in all_trials if t.state == TrialState.COMPLETE]\n\n# After\ncompleted_trials = _get_feasible_trials(\n    [t for t in all_trials if t.state == TrialState.COMPLETE]\n)\n```\n\n**Test Cleanup:**\n- Delete the added test file: `git rm <path/to/new_test_file.py>`\n- Run a quick inline reproduction script to confirm that a study with only infeasible `COMPLETE` trials sets `summary.best_trial = None`:\n\n```python\nimport optuna\nfrom optuna.study._study_summary import get_all_study_summaries\n\ndef objective(trial):\n    trial.set_user_attr(\"constraint\", [1.0])  # Infeasible constraint (> 0)\n    return 1.0\n\nstudy = optuna.create_study()\nstudy.optimize(objective, n_trials=2)\n\nsummaries = get_all_study_summaries(study._storage)\nassert summaries[0].best_trial is None\nprint(\"Verified: best_trial is None when all complete trials are infeasible.\")\n```\n\n---\n\n### 3. Developer Reply Draft\n\nUpdated the PR to filter `completed_trials` directly with `_get_feasible_trials`, stripped out the extra branching, and removed",
+    "timestamp": "2026-10-05T21:26:33.222545+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
@@ -16,8 +16,8 @@
     "state": "OPEN",
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": "### 1. Core Issue / Request\nThe quality mapping needs to depend strictly on the `quality` field instead of factoring in `completeness` (which was incorrectly downgrading older digitised records to `estimated`). Test fixtures must be updated to use the live API vocabulary (removing `Checked`/`Rejected`), and the mapping needs to be documented in `docs/data_sources.md`.\n\n---\n\n### 2. Minimal Code & Test Modifications\n\n#### Mapping Implementation (e.g., `aquascope/collectors/ea.py`)\nRemove completeness checks from the harmonization logic and map directly:\n\n```python\nEA_QUALITY_MAP = {\n    \"Good\": \"approved\",\n    \"Unchecked\": \"provisional\",\n    \"Estimated\": \"estimated\",\n    \"Suspect\": \"suspect\",\n    \"Missing\": \"unknown\",\n}\n\ndef map_ea_quality(quality: str | None) -> str:\n    return EA_QUALITY_MAP.get(quality, \"unknown\")\n\n# In the record parser:\nharmonized_quality = map_ea_quality(raw_quality)\n# Keep completeness and counts purely in quality_raw:\nquality_raw = {\n    \"quality\": raw_quality,\n    \"completeness\": raw_completeness,\n    \"valid\": valid_count,\n    \"invalid\": invalid_count,\n    \"missing\": missing_count,\n}\n```\n\n#### Test Fixtures (e.g., `tests/collectors/test_ea.py`)\nRemove test cases asserting `\"Checked\"` or `\"Rejected\"`, and assert that `Incomplete` + `Good` maps to `approved`:\n\n```python\n@pytest.mark.parametrize(\n    (\"quality\", \"completeness\", \"expected_harmonized\"),\n    [\n        (\"Good\", \"Complete\", \"approved\"),\n        (\"Good\", \"Incomplete\", \"approved\"),\n        (\"Unchecked\", \"Incomplete\", \"provisional\"),\n        (\"Estimated\", \"Complete\", \"estimated\"),\n        (\"Suspect\", \"Complete\", \"suspect\"),\n        (\"Missing\", \"Incomplete\", \"unknown\"),\n    ],\n)\ndef test_ea_quality_mapping(quality, completeness, expected_harmonized):\n    record = parse_ea_reading({\"quality",
-    "timestamp": "2026-10-05T18:26:36.775079+00:00"
+    "ai_analysis": null,
+    "timestamp": "2026-10-05T21:26:33.222594+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -27,7 +27,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-05T18:26:36.775113+00:00"
+    "timestamp": "2026-10-05T21:26:33.222615+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-05T18:26:36.775151+00:00"
+    "timestamp": "2026-10-05T21:26:33.222636+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-05T18:26:36.775179+00:00"
+    "timestamp": "2026-10-05T21:26:33.222653+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -57,6 +57,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-05T18:26:36.775205+00:00"
+    "timestamp": "2026-10-05T21:26:33.222671+00:00"
   }
 ]

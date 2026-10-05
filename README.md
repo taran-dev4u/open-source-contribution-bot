@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-05 04:41:37 UTC`
+- **Last Cloud Execution:** `2026-10-05 12:07:35 UTC`
 - **Active Monitored Pull Requests:** `6`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -28,75 +28,6 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `FlexMeasures/flexmeasures` | [#2448](https://github.com/FlexMeasures/flexmeasures/pull/2448) | feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `SeitaBV/timely-beliefs` | [#247](https://github.com/SeitaBV/timely-beliefs/pull/247) | fix: retain event_resolution on BeliefsSeries conversion (#220) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-
-### 🤖 Gemini AI Review Advisories
-
-#### `optuna/optuna#6879`: Filter feasible trials when selecting best_trial in get_all_study_summaries
-
-```markdown
-### 1. Core Request
-The maintainer wants you to simplify the implementation into a single-line filter on `completed_trials` using `_get_feasible_trials`, eliminate the extra branching, and delete the newly created test file in favor of sharing a reproduction snippet in the PR thread.
-
-### 2. Minimal Code Modification
-
-**In the target storage file (e.g., `optuna/storages/_cached_storage.py` or similar):**
-
-```python
-# Replace the existing completed_trials definition and drop the extra branching:
-completed_trials = _get_feasible_trials(
-    [t for t in all_trials if t.state == TrialState.COMPLETE]
-)
-```
-
-**Git cleanup:**
-- Revert/delete any new test files added in the PR (`git rm tests/...`).
-- Ensure `_get_feasible_trials` is imported if it isn't already present in scope.
-
-### 3. Developer Reply Draft
-Updated `completed_trials` to filter feasible trials directly and removed the redundant branching. I've also removed the new test file and added the reproduction script along with its output below.
-```
-
-#### `Rekin226/aquascope#485`: feat(collectors): map UK EA quality flags to harmonized schema
-
-```markdown
-### 1. Core Request
-The harmonized quality flag must be derived strictly from the EA `quality` field rather than sub-daily completeness counts, which incorrectly downgraded historical digitized records to `estimated`. Test fixtures also need to reflect real API vocabulary (dropping `Checked`/`Rejected`), and `docs/data_sources.md` must be updated with the mapping.
-
----
-
-### 2. Minimal Code & Test Modifications
-
-#### Mapping Logic (`collectors/ea.py` or equivalent mapper)
-Remove completeness evaluation from harmonized assignment; keep counts purely in `quality_raw`:
-
-```python
-EA_QUALITY_MAP = {
-    "Good": "approved",
-    "Unchecked": "provisional",
-    "Estimated": "estimated",
-    "Suspect": "suspect",
-    "Missing": "unknown",
-}
-
-def map_ea_quality(quality_str: str, completeness: str | None = None, counts: dict | None = None) -> tuple[str, str]:
-    harmonized = EA_QUALITY_MAP.get(quality_str, "unknown")
-    # Preserve existing quality_raw formatting logic
-    raw_details = f"{quality_str}; {completeness or 'None'}; {counts or {}}"
-    return harmonized, raw_details
-```
-
-#### Test Fixtures (`tests/test_ea_collector.py`)
-Replace synthetic flags (`Checked`, `Rejected`) with actual EA vocabulary:
-
-```python
-# Remove: {"quality": "Checked", ...}, {"quality": "Rejected", ...}
-
-# Add fixtures matching real measure 052d0819-2a32-47df-9b99-c243c9c8235b-flow-m-86400-m3s-qualified:
-SAMPLE_EA_READINGS = [
-    {"date": "2010-01-01", "quality": "Good", "completeness": "Complete", "valid": "96", "invalid": "0", "missing": "0"},
-    {"date": "2010-06-27", "quality": "Good", "completeness": "Incomplete", "valid": "8021", "invalid": "0
-```
-
 
 ---
 

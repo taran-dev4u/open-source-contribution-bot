@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-05 21:26:42 UTC`
+- **Last Cloud Execution:** `2026-10-06 00:07:14 UTC`
 - **Active Monitored Pull Requests:** `6`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -34,52 +34,58 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 #### `optuna/optuna#6879`: Filter feasible trials when selecting best_trial in get_all_study_summaries
 
 ```markdown
-### 1. Core Issue / Request
-The maintainer wants to avoid unnecessary branching by filtering infeasible trials directly when `completed_trials` is initialized, relying on the existing empty-list check to set `best_trial = None`. They also requested removing the new test file and validating the behavior via a reproduction script instead.
+### 1. Core Issue
+The implementation introduces redundant branching and an unnecessary test file. The maintainer wants the feasibility filtering inlined directly into the `completed_trials` definition—relying on the existing empty-list check—and prefers a verification script in the PR description over a new test file.
 
----
+### 2. Minimal Modifications
 
-### 2. Minimal Code / Test Modification
-
-**Code Change (`optuna/study/_study_summary.py` or equivalent storage module):**
-
-Replace the existing `completed_trials` comprehension and remove any newly added infeasibility checks/branches:
+**In `optuna/study/_study_summary.py` (or relevant summary file):**
+Revert your added branching and update the `completed_trials` assignment:
 
 ```python
-# Before
-completed_trials = [t for t in all_trials if t.state == TrialState.COMPLETE]
-
-# After
 completed_trials = _get_feasible_trials(
     [t for t in all_trials if t.state == TrialState.COMPLETE]
 )
 ```
 
-**Test Cleanup:**
-- Delete the added test file: `git rm <path/to/new_test_file.py>`
-- Run a quick inline reproduction script to confirm that a study with only infeasible `COMPLETE` trials sets `summary.best_trial = None`:
-
-```python
-import optuna
-from optuna.study._study_summary import get_all_study_summaries
-
-def objective(trial):
-    trial.set_user_attr("constraint", [1.0])  # Infeasible constraint (> 0)
-    return 1.0
-
-study = optuna.create_study()
-study.optimize(objective, n_trials=2)
-
-summaries = get_all_study_summaries(study._storage)
-assert summaries[0].best_trial is None
-print("Verified: best_trial is None when all complete trials are infeasible.")
-```
-
----
+**In the repository/PR:**
+- Revert/delete the new test file.
+- Prepare a minimal standalone reproduction script and its CLI output (showing `best_trial` resolving to `None` or the correct feasible trial when infeasible trials are present) to paste in your PR reply.
 
 ### 3. Developer Reply Draft
 
-Updated the PR to filter `completed_trials` directly with `_get_feasible_trials`, stripped out the extra branching, and removed
+I've simplified the assignment using `_get_feasible_trials`, removed the extra branching, and dropped the new test file. 
+
+Below is the reproduction script and output demonstrating that infeasible complete trials are correctly ignored when resolving `best_trial`:
+
+```python
+# [Paste minimal repro script + output here]
+```
+```
+
+#### `Rekin226/aquascope#485`: feat(collectors): map UK EA quality flags to harmonized schema
+
+```markdown
+### 1. Core Issue / Request
+The maintainer wants the harmonized code derived solely from the API's `quality` string (`Good`, `Unchecked`, `Estimated`, `Suspect`, `Missing`), dropping any completeness-based demotions to `estimated`. Additionally, fixtures need to be aligned with live data samples (removing unused statuses like `Checked`/`Rejected`), and `docs/data_sources.md` must be updated to document the EA mapping.
+
+---
+
+### 2. Minimal Code / Test Modifications
+
+#### Mapping Logic (`aquascope/collectors/ea.py` or equivalent mapping module)
+Strip out logic checking `completeness` or sub-daily counts when assigning the harmonized code:
+
+```python
+EA_QUALITY_MAPPING = {
+    "Good": "approved",
+    "Unchecked": "provisional",
+    "Estimated": "estimated",
+    "Suspect": "suspect",
+    "Missing": "unknown",
+}
+
+def map_ea_quality(quality: str | None
 ```
 
 

@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-06 11:06:33 UTC`
-- **Active Monitored Pull Requests:** `6`
-- **Total Successfully Merged:** `0`
+- **Last Cloud Execution:** `2026-10-06 18:05:42 UTC`
+- **Active Monitored Pull Requests:** `5`
+- **Total Successfully Merged:** `1`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `12`
+- **Uncontested Issues Scouted:** `13`
 
 ---
 
@@ -27,7 +27,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `aeon-toolkit/aeon` | [#3828](https://github.com/aeon-toolkit/aeon/pull/3828) | [BUG] Avoid in-place series swap in DTW distance to support mixed dtypes and fix Itakura asymmetry | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2448](https://github.com/FlexMeasures/flexmeasures/pull/2448) | feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `SeitaBV/timely-beliefs` | [#247](https://github.com/SeitaBV/timely-beliefs/pull/247) | fix: retain event_resolution on BeliefsSeries conversion (#220) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+| `SeitaBV/timely-beliefs` | [#247](https://github.com/SeitaBV/timely-beliefs/pull/247) | fix: retain event_resolution on BeliefsSeries conversion (#220) | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
 
 ---
 
@@ -56,9 +56,9 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `Rekin226/aquascope` | [#318](https://github.com/Rekin226/aquascope/issues/318) | Blocked: New collector: Northern Ireland (DfI Rivers water levels) | `enhancement` `help wanted` `new-collector` |
 | `NVIDIA-NeMo/Automodel` | [#533](https://github.com/NVIDIA-NeMo/Automodel/issues/533) | Make StatefulDataloader be DP-aware | `enhancement` `good first issue` |
 | `NVIDIA-NeMo/Automodel` | [#2462](https://github.com/NVIDIA-NeMo/Automodel/issues/2462) | Support MiMo-V2.5-Pro | `enhancement` `good first issue` |
+| `docling-project/docling` | [#4609](https://github.com/docling-project/docling/issues/4609) | PY-09-docling-core: `validate_misplaced_list_items` drops the children of multi-run list items, so `export_to_markdown()` / `export_to_html()` lose their text and mutate the document | `bug` `docling-document` `good first issue` |
 | `docling-project/docling` | [#890](https://github.com/docling-project/docling/issues/890) | Docling on n8n nodes | `enhancement` `help wanted` `triage/close-stale` |
 | `docling-project/docling` | [#327](https://github.com/docling-project/docling/issues/327) | Standardized Access to Common Email and Calendar Formats | `enhancement` `help wanted` `icebox` |
-| `FlexMeasures/flexmeasures` | [#1216](https://github.com/FlexMeasures/flexmeasures/issues/1216) | Add filter by asset type in the asset UI page | `good first issue` `UI` |
 
 ---
 

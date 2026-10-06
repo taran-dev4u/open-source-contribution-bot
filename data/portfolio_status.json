@@ -7,7 +7,7 @@
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-06T11:06:26.363353+00:00"
+    "timestamp": "2026-10-06T18:05:35.784618+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
@@ -17,7 +17,7 @@
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-06T11:06:26.363423+00:00"
+    "timestamp": "2026-10-06T18:05:35.784710+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -27,7 +27,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-06T11:06:26.363459+00:00"
+    "timestamp": "2026-10-06T18:05:35.784772+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-06T11:06:26.363489+00:00"
+    "timestamp": "2026-10-06T18:05:35.784828+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -47,16 +47,16 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-06T11:06:26.363516+00:00"
+    "timestamp": "2026-10-06T18:05:35.784884+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
     "pr": 247,
     "title": "fix: retain event_resolution on BeliefsSeries conversion (#220)",
-    "state": "OPEN",
+    "state": "MERGED",
     "review": "None",
-    "fork_synced": false,
+    "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-10-06T11:06:26.363542+00:00"
+    "timestamp": "2026-10-06T18:05:35.784939+00:00"
   }
 ]

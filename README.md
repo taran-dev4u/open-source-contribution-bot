@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-06 02:07:10 UTC`
+- **Last Cloud Execution:** `2026-10-06 11:06:33 UTC`
 - **Active Monitored Pull Requests:** `6`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -28,95 +28,6 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `FlexMeasures/flexmeasures` | [#2448](https://github.com/FlexMeasures/flexmeasures/pull/2448) | feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `SeitaBV/timely-beliefs` | [#247](https://github.com/SeitaBV/timely-beliefs/pull/247) | fix: retain event_resolution on BeliefsSeries conversion (#220) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-
-### 🤖 Gemini AI Review Advisories
-
-#### `optuna/optuna#6879`: Filter feasible trials when selecting best_trial in get_all_study_summaries
-
-```markdown
-### 1. Core Request
-The maintainer wants the fix simplified to a single line by wrapping the existing `completed_trials` list comprehension with `_get_feasible_trials()`, which makes your custom branching redundant. They also want you to drop the newly added test file and provide a standalone reproduction script with output in the PR discussion instead.
-
-### 2. Minimal Modifications
-
-**Source code (where `completed_trials` is defined in `get_all_study_summaries`):**
-Replace your current changes and the original assignment with:
-
-```python
-completed_trials = _get_feasible_trials(
-    [t for t in all_trials if t.state == TrialState.COMPLETE]
-)
-```
-
-Revert any extra `if`/`else` branching introduced downstream.
-
-**Tests / PR cleanup:**
-Delete the newly created test file:
-```bash
-git rm <path_to_new_test_file>
-```
-
-Run a short reproduction script locally and capture the output to paste in your PR comment:
-```python
-import optuna
-
-def objective(trial):
-    trial.set_user_attr("constraint", [1.0])  # Infeasible
-    return 1.0
-
-study = optuna.create_study()
-study.optimize(objective, n_trials=1)
-summaries = optuna.study.get_all_study_summaries(study._storage)
-assert summaries[0].best_trial is None
-print("Success: best_trial is None when all trials are infeasible.")
-```
-
-### 3. Developer Reply Draft
-Simplified the trial filtering to the single `_get_feasible_trials` call, removed the redundant branching, and deleted the new test file. Here is the reproduction script confirming `best_trial` evaluates to `None` for infeasible trials:
-
-<reproduction script and output>
-```
-
-#### `Rekin226/aquascope#485`: feat(collectors): map UK EA quality flags to harmonized schema
-
-```markdown
-### Core Issue / Request
-The harmonized quality flag must be derived strictly from the EA `quality` value without factoring in completeness/sub-daily counts, which were falsely marking valid digitised records as `estimated`. Additionally, fixtures need updating to match real-world EA vocabulary (removing hypothetical "Checked"/"Rejected" values), and `docs/data_sources.md` must be updated to document the mapping.
-
----
-
-### Minimal Code / Test Modifications
-
-#### 1. Update Mapping Logic (e.g. `aquascope/collectors/ea.py`)
-Remove completeness checks from the harmonized assignment, mapping strictly from `quality`:
-
-```python
-EA_QUALITY_MAPPING = {
-    "Good": "approved",
-    "Unchecked": "provisional",
-    "Estimated": "estimated",
-    "Suspect": "suspect",
-    "Missing": "unknown",
-}
-
-def map_ea_quality(quality: str | None, completeness: str | None, valid: str | None, invalid: str | None, missing: str | None) -> tuple[str, str]:
-    # Raw quality string stays composite
-    quality_raw = f"{quality or ''}; completeness={completeness or ''}; valid={valid or '0'}; invalid={invalid or '0'}; missing={missing or '0'}"
-    
-    # Harmonized code derived strictly from quality
-    harmonized = EA_QUALITY_MAPPING.get(quality, "unknown")
-    
-    return harmonized, quality_raw
-```
-
-#### 2. Update Fixtures & Tests (e.g. `tests/collectors/test_ea.py`)
-Replace references to `"Checked"` / `"Rejected"` with real measure values from `052d0819-2a32-47df-9b99-c243c9c8235b-flow-m-86400-m3s-qualified`:
-
-```python
-@pytest.mark.parametrize(
-    ("quality", "completeness", "valid", "invalid", "missing", "expected_code"),
-```
-
 
 ---
 

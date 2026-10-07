@@ -87,6 +87,20 @@ class BotConfig:
                 head_branch="feat/series-event-resolution-retention",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="docling-project/docling",
+                fork_repo="taran-dev4u/docling",
+                pr_number=4627,
+                head_branch="fix/docx-skip-xml-comments",
+                default_branch="main",
+            ),
+            MonitoredPR(
+                upstream_repo="NVIDIA-NeMo/Automodel",
+                fork_repo="taran-dev4u/Automodel",
+                pr_number=4154,
+                head_branch="docs/embedding-biencoder-tutorial",
+                default_branch="main",
+            ),
         ]
     )
 

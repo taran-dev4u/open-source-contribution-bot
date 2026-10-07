@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-07 04:57:36 UTC`
-- **Active Monitored Pull Requests:** `5`
-- **Total Successfully Merged:** `1`
+- **Last Cloud Execution:** `2026-10-07 12:53:02 UTC`
+- **Active Monitored Pull Requests:** `6`
+- **Total Successfully Merged:** `2`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `13`
+- **Uncontested Issues Scouted:** `11`
 
 ---
 
@@ -22,12 +22,14 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | PR | Title | State | Review | Fork Sync |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `optuna/optuna` | [#6879](https://github.com/optuna/optuna/pull/6879) | Filter feasible trials when selecting best_trial in get_all_study_summaries | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
+| `optuna/optuna` | [#6879](https://github.com/optuna/optuna/pull/6879) | Filter feasible trials when selecting best_trial in get_all_study_summaries | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
 | `Rekin226/aquascope` | [#485](https://github.com/Rekin226/aquascope/pull/485) | feat(collectors): map UK EA quality flags to harmonized schema | 🟢 `OPEN` | `COMMENTED` | — |
 | `aeon-toolkit/aeon` | [#3828](https://github.com/aeon-toolkit/aeon/pull/3828) | [BUG] Avoid in-place series swap in DTW distance to support mixed dtypes and fix Itakura asymmetry | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2448](https://github.com/FlexMeasures/flexmeasures/pull/2448) | feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `SeitaBV/timely-beliefs` | [#247](https://github.com/SeitaBV/timely-beliefs/pull/247) | fix: retain event_resolution on BeliefsSeries conversion (#220) | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
+| `docling-project/docling` | [#4627](https://github.com/docling-project/docling/pull/4627) | fix(docx): ignore XML comments and processing instructions | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+| `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add end-to-end embedding bi-encoder training tutorial | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 
 ---
 
@@ -49,9 +51,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
-| `Rekin226/aquascope` | [#473](https://github.com/Rekin226/aquascope/issues/473) | Audit Registry Attribution Against First-Party Terms | `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
-| `Rekin226/aquascope` | [#443](https://github.com/Rekin226/aquascope/issues/443) | Say what the Archive is: 45,919 catalogued and ~1,000 mirrored, stated the same way everywhere | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#498](https://github.com/Rekin226/aquascope/issues/498) | collector-health: bom station catalog failed in the weekly harvest | `help wanted` `collector-health` |
 | `Rekin226/aquascope` | [#318](https://github.com/Rekin226/aquascope/issues/318) | Blocked: New collector: Northern Ireland (DfI Rivers water levels) | `enhancement` `help wanted` `new-collector` |
 | `NVIDIA-NeMo/Automodel` | [#533](https://github.com/NVIDIA-NeMo/Automodel/issues/533) | Make StatefulDataloader be DP-aware | `enhancement` `good first issue` |
@@ -59,6 +59,8 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `docling-project/docling` | [#4609](https://github.com/docling-project/docling/issues/4609) | PY-09-docling-core: `validate_misplaced_list_items` drops the children of multi-run list items, so `export_to_markdown()` / `export_to_html()` lose their text and mutate the document | `bug` `docling-document` `good first issue` |
 | `docling-project/docling` | [#890](https://github.com/docling-project/docling/issues/890) | Docling on n8n nodes | `enhancement` `help wanted` `triage/close-stale` |
 | `docling-project/docling` | [#327](https://github.com/docling-project/docling/issues/327) | Standardized Access to Common Email and Calendar Formats | `enhancement` `help wanted` `icebox` |
+| `FlexMeasures/flexmeasures` | [#1216](https://github.com/FlexMeasures/flexmeasures/issues/1216) | Add filter by asset type in the asset UI page | `good first issue` `UI` |
+| `FlexMeasures/flexmeasures` | [#1954](https://github.com/FlexMeasures/flexmeasures/issues/1954) | KPI Averaging Ignores Missing Days (UI/UX Issue) | `bug` `good first issue` |
 
 ---
 

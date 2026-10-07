@@ -7,17 +7,17 @@
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-06T23:39:14.470141+00:00"
+    "timestamp": "2026-10-07T02:31:13.196480+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
     "pr": 485,
     "title": "feat(collectors): map UK EA quality flags to harmonized schema",
     "state": "OPEN",
-    "review": "CHANGES_REQUESTED",
+    "review": "COMMENTED",
     "fork_synced": false,
-    "ai_analysis": "### 1. Core Request\nThe maintainer wants the harmonized flag derived purely from EA's `quality` string\u2014dropping the completeness check that was turning `Good` + `Incomplete` rows into `estimated`\u2014along with fixture updates matching real EA values and documentation in `docs/data_sources.md`.\n\n---\n\n### 2. Minimal Code & Test Modifications\n\n#### Logic (`ea_collector.py` or equivalent mapper module)\nSimplify the quality resolution so completeness does not override the flag:\n\n```python\nEA_QUALITY_MAP = {\n    \"Good\": HarmonizedQuality.APPROVED,\n    \"Unchecked\": HarmonizedQuality.PROVISIONAL,\n    \"Estimated\": HarmonizedQuality.ESTIMATED,\n    \"Suspect\": HarmonizedQuality.SUSPECT,\n    \"Missing\": HarmonizedQuality.UNKNOWN,\n}\n\ndef map_quality(quality: str | None) -> HarmonizedQuality:\n    return EA_QUALITY_MAP.get(quality, HarmonizedQuality.UNKNOWN)\n```\n\nEnsure `quality_raw` continues to capture raw values:\n```python\n# Keep preserving full raw metadata as previously implemented\nquality_raw = f\"{quality}; completeness={completeness}; valid={valid}; invalid={invalid}; missing={missing}\"\n```\n\n#### Test Fixtures\nRemove `\"Checked\"` and `\"Rejected\"` from test cases and replace with real-world combinations:\n- `Good`, `Complete` $\\rightarrow$ `APPROVED`\n- `Good`, `Incomplete` $\\rightarrow$ `APPROVED`\n- `Unchecked`, `Incomplete` $\\rightarrow$ `PROVISIONAL`\n- `Suspect` $\\rightarrow$ `SUSPECT`\n- `Estimated` $\\rightarrow$",
-    "timestamp": "2026-10-06T23:39:14.470202+00:00"
+    "ai_analysis": null,
+    "timestamp": "2026-10-07T02:31:13.196539+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -27,7 +27,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-06T23:39:14.470238+00:00"
+    "timestamp": "2026-10-07T02:31:13.196578+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-06T23:39:14.470270+00:00"
+    "timestamp": "2026-10-07T02:31:13.196608+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-06T23:39:14.470300+00:00"
+    "timestamp": "2026-10-07T02:31:13.196638+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -57,6 +57,6 @@
     "review": "None",
     "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-10-06T23:39:14.470330+00:00"
+    "timestamp": "2026-10-07T02:31:13.196667+00:00"
   }
 ]

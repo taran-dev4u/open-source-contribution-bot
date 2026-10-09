@@ -83,8 +83,8 @@ class BotConfig:
             MonitoredPR(
                 upstream_repo="SeitaBV/timely-beliefs",
                 fork_repo="taran-dev4u/timely-beliefs",
-                pr_number=247,
-                head_branch="feat/series-event-resolution-retention",
+                pr_number=257,
+                head_branch="fix/db-source-ordering-by-primary-key",
                 default_branch="main",
             ),
             MonitoredPR(

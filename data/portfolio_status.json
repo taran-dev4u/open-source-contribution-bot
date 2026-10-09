@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-10-09T05:10:43.938676+00:00"
+    "timestamp": "2026-10-09T12:47:56.800538+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
@@ -17,17 +17,17 @@
     "review": "COMMENTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-09T05:10:43.938729+00:00"
+    "timestamp": "2026-10-09T12:47:56.800610+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
     "pr": 3828,
     "title": "[BUG] Avoid in-place series swap in DTW distance to support mixed dtypes and fix Itakura asymmetry",
-    "state": "OPEN",
-    "review": "CHANGES_REQUESTED",
-    "fork_synced": false,
+    "state": "MERGED",
+    "review": "None",
+    "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-10-09T05:10:43.938749+00:00"
+    "timestamp": "2026-10-09T12:47:56.800662+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-09T05:10:43.938766+00:00"
+    "timestamp": "2026-10-09T12:47:56.800710+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -47,17 +47,17 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-09T05:10:43.938783+00:00"
+    "timestamp": "2026-10-09T12:47:56.800759+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
-    "pr": 247,
-    "title": "fix: retain event_resolution on BeliefsSeries conversion (#220)",
-    "state": "MERGED",
+    "pr": 257,
+    "title": "Order database-backed belief sources by primary key",
+    "state": "OPEN",
     "review": "None",
-    "fork_synced": true,
+    "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-09T05:10:43.938800+00:00"
+    "timestamp": "2026-10-09T12:47:56.800805+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -67,6 +67,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-09T05:10:43.938816+00:00"
+    "timestamp": "2026-10-09T12:47:56.800847+00:00"
   }
 ]

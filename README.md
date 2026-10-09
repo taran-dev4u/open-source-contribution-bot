@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-09 05:10:51 UTC`
+- **Last Cloud Execution:** `2026-10-09 12:48:05 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `2`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -24,10 +24,10 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `optuna/optuna` | [#6879](https://github.com/optuna/optuna/pull/6879) | Filter feasible trials when selecting best_trial in get_all_study_summaries | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
 | `Rekin226/aquascope` | [#485](https://github.com/Rekin226/aquascope/pull/485) | feat(collectors): map UK EA quality flags to harmonized schema | 🟢 `OPEN` | `COMMENTED` | — |
-| `aeon-toolkit/aeon` | [#3828](https://github.com/aeon-toolkit/aeon/pull/3828) | [BUG] Avoid in-place series swap in DTW distance to support mixed dtypes and fix Itakura asymmetry | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
+| `aeon-toolkit/aeon` | [#3828](https://github.com/aeon-toolkit/aeon/pull/3828) | [BUG] Avoid in-place series swap in DTW distance to support mixed dtypes and fix Itakura asymmetry | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
 | `FlexMeasures/flexmeasures` | [#2448](https://github.com/FlexMeasures/flexmeasures/pull/2448) | feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `SeitaBV/timely-beliefs` | [#247](https://github.com/SeitaBV/timely-beliefs/pull/247) | fix: retain event_resolution on BeliefsSeries conversion (#220) | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
+| `SeitaBV/timely-beliefs` | [#257](https://github.com/SeitaBV/timely-beliefs/pull/257) | Order database-backed belief sources by primary key | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add end-to-end embedding bi-encoder training tutorial | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 
 ---

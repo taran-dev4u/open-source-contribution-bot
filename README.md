@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-10 04:56:00 UTC`
+- **Last Cloud Execution:** `2026-10-10 12:06:20 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `2`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -51,7 +51,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
-| `Rekin226/aquascope` | [#498](https://github.com/Rekin226/aquascope/issues/498) | collector-health: bom station catalog failed in the weekly harvest | `help wanted` `collector-health` |
+| `Rekin226/aquascope` | [#329](https://github.com/Rekin226/aquascope/issues/329) | Flood-extent surrogate: a 2D shallow-water emulator (PhysicsNeMo) so the flood playbook can say where the water goes, research-grade | `help wanted` `methodology` `major feature` |
 | `NVIDIA-NeMo/Automodel` | [#533](https://github.com/NVIDIA-NeMo/Automodel/issues/533) | Make StatefulDataloader be DP-aware | `enhancement` `good first issue` |
 | `NVIDIA-NeMo/Automodel` | [#2462](https://github.com/NVIDIA-NeMo/Automodel/issues/2462) | Support MiMo-V2.5-Pro | `enhancement` `good first issue` |
 | `docling-project/docling` | [#4609](https://github.com/docling-project/docling/issues/4609) | PY-09-docling-core: `validate_misplaced_list_items` drops the children of multi-run list items, so `export_to_markdown()` / `export_to_html()` lose their text and mutate the document | `bug` `docling-document` `good first issue` |

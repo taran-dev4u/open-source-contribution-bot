@@ -94,6 +94,13 @@ class BotConfig:
                 head_branch="docs/embedding-biencoder-tutorial",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="docling-project/docling",
+                fork_repo="taran-dev4u/docling",
+                pr_number=4757,
+                head_branch="fix/docx-table-cell-textbox-duplication",
+                default_branch="main",
+            ),
         ]
     )
 

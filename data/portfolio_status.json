@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-10-10T23:19:45.737412+00:00"
+    "timestamp": "2026-10-11T04:43:03.006206+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
@@ -17,7 +17,7 @@
     "review": "COMMENTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-10T23:19:45.737451+00:00"
+    "timestamp": "2026-10-11T04:43:03.006285+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -27,7 +27,7 @@
     "review": "None",
     "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-10-10T23:19:45.737471+00:00"
+    "timestamp": "2026-10-11T04:43:03.006339+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-10T23:19:45.737487+00:00"
+    "timestamp": "2026-10-11T04:43:03.006396+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-10T23:19:45.737506+00:00"
+    "timestamp": "2026-10-11T04:43:03.006449+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -57,7 +57,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-10T23:19:45.737522+00:00"
+    "timestamp": "2026-10-11T04:43:03.006502+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -67,6 +67,16 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-10T23:19:45.737536+00:00"
+    "timestamp": "2026-10-11T04:43:03.006553+00:00"
+  },
+  {
+    "repo": "docling-project/docling",
+    "pr": 4757,
+    "title": "fix(docx): emit textboxes in table cells once inside their cell",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "ai_analysis": null,
+    "timestamp": "2026-10-11T04:43:03.006603+00:00"
   }
 ]

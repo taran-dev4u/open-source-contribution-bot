@@ -10,8 +10,8 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-10 23:19:52 UTC`
-- **Active Monitored Pull Requests:** `5`
+- **Last Cloud Execution:** `2026-10-11 04:43:09 UTC`
+- **Active Monitored Pull Requests:** `6`
 - **Total Successfully Merged:** `2`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
 - **Uncontested Issues Scouted:** `10`
@@ -29,6 +29,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `SeitaBV/timely-beliefs` | [#257](https://github.com/SeitaBV/timely-beliefs/pull/257) | Order database-backed belief sources by primary key | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add end-to-end embedding bi-encoder training tutorial | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+| `docling-project/docling` | [#4757](https://github.com/docling-project/docling/pull/4757) | fix(docx): emit textboxes in table cells once inside their cell | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 
 ---
 

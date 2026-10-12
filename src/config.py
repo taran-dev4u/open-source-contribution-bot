@@ -46,27 +46,6 @@ class BotConfig:
     monitored_prs: list[MonitoredPR] = field(
         default_factory=lambda: [
             MonitoredPR(
-                upstream_repo="optuna/optuna",
-                fork_repo="taran-dev4u/optuna",
-                pr_number=6879,
-                head_branch="fix/study-summaries-respect-constraints",
-                default_branch="master",
-            ),
-            MonitoredPR(
-                upstream_repo="Rekin226/aquascope",
-                fork_repo="taran-dev4u/aquascope",
-                pr_number=485,
-                head_branch="feat/uk-ea-quality-flags",
-                default_branch="main",
-            ),
-            MonitoredPR(
-                upstream_repo="aeon-toolkit/aeon",
-                fork_repo="taran-dev4u/aeon",
-                pr_number=3828,
-                head_branch="fix/dtw-mixed-dtypes-itakura-swap",
-                default_branch="main",
-            ),
-            MonitoredPR(
                 upstream_repo="FlexMeasures/flexmeasures",
                 fork_repo="taran-dev4u/flexmeasures",
                 pr_number=2448,
@@ -81,24 +60,10 @@ class BotConfig:
                 default_branch="main",
             ),
             MonitoredPR(
-                upstream_repo="SeitaBV/timely-beliefs",
-                fork_repo="taran-dev4u/timely-beliefs",
-                pr_number=257,
-                head_branch="fix/db-source-ordering-by-primary-key",
-                default_branch="main",
-            ),
-            MonitoredPR(
                 upstream_repo="NVIDIA-NeMo/Automodel",
                 fork_repo="taran-dev4u/Automodel",
                 pr_number=4154,
                 head_branch="docs/embedding-biencoder-tutorial",
-                default_branch="main",
-            ),
-            MonitoredPR(
-                upstream_repo="docling-project/docling",
-                fork_repo="taran-dev4u/docling",
-                pr_number=4757,
-                head_branch="fix/docx-table-cell-textbox-duplication",
                 default_branch="main",
             ),
         ]

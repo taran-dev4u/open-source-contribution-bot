@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-11 23:30:08 UTC`
-- **Active Monitored Pull Requests:** `6`
-- **Total Successfully Merged:** `2`
+- **Last Cloud Execution:** `2026-10-12 04:58:51 UTC`
+- **Active Monitored Pull Requests:** `5`
+- **Total Successfully Merged:** `3`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `11`
+- **Uncontested Issues Scouted:** `12`
 
 ---
 
@@ -23,13 +23,13 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | Repository | PR | Title | State | Review | Fork Sync |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `optuna/optuna` | [#6879](https://github.com/optuna/optuna/pull/6879) | Filter feasible trials when selecting best_trial in get_all_study_summaries | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
-| `Rekin226/aquascope` | [#485](https://github.com/Rekin226/aquascope/pull/485) | feat(collectors): map UK EA quality flags to harmonized schema | 🟢 `OPEN` | `COMMENTED` | — |
+| `Rekin226/aquascope` | [#485](https://github.com/Rekin226/aquascope/pull/485) | feat(collectors): map UK EA quality flags to harmonized schema | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
 | `aeon-toolkit/aeon` | [#3828](https://github.com/aeon-toolkit/aeon/pull/3828) | [BUG] Avoid in-place series swap in DTW distance to support mixed dtypes and fix Itakura asymmetry | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
 | `FlexMeasures/flexmeasures` | [#2448](https://github.com/FlexMeasures/flexmeasures/pull/2448) | feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `SeitaBV/timely-beliefs` | [#257](https://github.com/SeitaBV/timely-beliefs/pull/257) | Order database-backed belief sources by primary key | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add end-to-end embedding bi-encoder training tutorial | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `docling-project/docling` | [#4757](https://github.com/docling-project/docling/pull/4757) | fix(docx): emit textboxes in table cells once inside their cell | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+| `docling-project/docling` | [#4757](https://github.com/docling-project/docling/pull/4757) | fix(docx): emit textboxes in table cells once inside their cell | 🟢 `OPEN` | ✅ `APPROVED` | — |
 
 ---
 
@@ -51,6 +51,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
+| `Rekin226/aquascope` | [#473](https://github.com/Rekin226/aquascope/issues/473) | Audit Registry Attribution Against First-Party Terms | `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#449](https://github.com/Rekin226/aquascope/issues/449) | The scheduled harvest has published nothing for two weeks, and nothing says so | `bug` `help wanted` |
 | `Rekin226/aquascope` | [#444](https://github.com/Rekin226/aquascope/issues/444) | Give the Archive its own DOI, so people stop citing the library for the data | `documentation` `enhancement` `help wanted` |
@@ -60,7 +61,6 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `docling-project/docling` | [#890](https://github.com/docling-project/docling/issues/890) | Docling on n8n nodes | `enhancement` `help wanted` `triage/close-stale` |
 | `docling-project/docling` | [#327](https://github.com/docling-project/docling/issues/327) | Standardized Access to Common Email and Calendar Formats | `enhancement` `help wanted` `icebox` |
 | `FlexMeasures/flexmeasures` | [#1216](https://github.com/FlexMeasures/flexmeasures/issues/1216) | Add filter by asset type in the asset UI page | `good first issue` `UI` |
-| `FlexMeasures/flexmeasures` | [#1954](https://github.com/FlexMeasures/flexmeasures/issues/1954) | KPI Averaging Ignores Missing Days (UI/UX Issue) | `bug` `good first issue` |
 
 ---
 

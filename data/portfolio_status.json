@@ -7,17 +7,17 @@
     "review": "None",
     "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-10-11T23:29:59.487444+00:00"
+    "timestamp": "2026-10-12T04:58:43.295896+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
     "pr": 485,
     "title": "feat(collectors): map UK EA quality flags to harmonized schema",
-    "state": "OPEN",
-    "review": "COMMENTED",
-    "fork_synced": false,
+    "state": "MERGED",
+    "review": "None",
+    "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-10-11T23:29:59.487499+00:00"
+    "timestamp": "2026-10-12T04:58:43.295962+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -27,7 +27,7 @@
     "review": "None",
     "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-10-11T23:29:59.487530+00:00"
+    "timestamp": "2026-10-12T04:58:43.296015+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-11T23:29:59.487555+00:00"
+    "timestamp": "2026-10-12T04:58:43.296057+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-11T23:29:59.487577+00:00"
+    "timestamp": "2026-10-12T04:58:43.296099+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -57,7 +57,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-11T23:29:59.487600+00:00"
+    "timestamp": "2026-10-12T04:58:43.296144+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -67,16 +67,16 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-11T23:29:59.487621+00:00"
+    "timestamp": "2026-10-12T04:58:43.296184+00:00"
   },
   {
     "repo": "docling-project/docling",
     "pr": 4757,
     "title": "fix(docx): emit textboxes in table cells once inside their cell",
     "state": "OPEN",
-    "review": "None",
+    "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-11T23:29:59.487644+00:00"
+    "timestamp": "2026-10-12T04:58:43.296220+00:00"
   }
 ]

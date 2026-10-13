@@ -10,9 +10,9 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-12 22:47:44 UTC`
-- **Active Monitored Pull Requests:** `4`
-- **Total Successfully Merged:** `4`
+- **Last Cloud Execution:** `2026-10-13 04:07:37 UTC`
+- **Active Monitored Pull Requests:** `3`
+- **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
 - **Uncontested Issues Scouted:** `12`
 
@@ -22,14 +22,9 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | PR | Title | State | Review | Fork Sync |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `optuna/optuna` | [#6879](https://github.com/optuna/optuna/pull/6879) | Filter feasible trials when selecting best_trial in get_all_study_summaries | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
-| `Rekin226/aquascope` | [#485](https://github.com/Rekin226/aquascope/pull/485) | feat(collectors): map UK EA quality flags to harmonized schema | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
-| `aeon-toolkit/aeon` | [#3828](https://github.com/aeon-toolkit/aeon/pull/3828) | [BUG] Avoid in-place series swap in DTW distance to support mixed dtypes and fix Itakura asymmetry | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
 | `FlexMeasures/flexmeasures` | [#2448](https://github.com/FlexMeasures/flexmeasures/pull/2448) | feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `SeitaBV/timely-beliefs` | [#257](https://github.com/SeitaBV/timely-beliefs/pull/257) | Order database-backed belief sources by primary key | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add end-to-end embedding bi-encoder training tutorial | 🟢 `OPEN` | `COMMENTED` | — |
-| `docling-project/docling` | [#4757](https://github.com/docling-project/docling/pull/4757) | fix(docx): emit textboxes in table cells once inside their cell | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
+| `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial | 🟢 `OPEN` | `COMMENTED` | — |
 
 ---
 

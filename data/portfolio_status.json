@@ -1,35 +1,5 @@
 [
   {
-    "repo": "optuna/optuna",
-    "pr": 6879,
-    "title": "Filter feasible trials when selecting best_trial in get_all_study_summaries",
-    "state": "MERGED",
-    "review": "None",
-    "fork_synced": true,
-    "ai_analysis": null,
-    "timestamp": "2026-10-12T22:47:36.589742+00:00"
-  },
-  {
-    "repo": "Rekin226/aquascope",
-    "pr": 485,
-    "title": "feat(collectors): map UK EA quality flags to harmonized schema",
-    "state": "MERGED",
-    "review": "None",
-    "fork_synced": true,
-    "ai_analysis": null,
-    "timestamp": "2026-10-12T22:47:36.589784+00:00"
-  },
-  {
-    "repo": "aeon-toolkit/aeon",
-    "pr": 3828,
-    "title": "[BUG] Avoid in-place series swap in DTW distance to support mixed dtypes and fix Itakura asymmetry",
-    "state": "MERGED",
-    "review": "None",
-    "fork_synced": true,
-    "ai_analysis": null,
-    "timestamp": "2026-10-12T22:47:36.589807+00:00"
-  },
-  {
     "repo": "FlexMeasures/flexmeasures",
     "pr": 2448,
     "title": "feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416)",
@@ -37,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-12T22:47:36.589828+00:00"
+    "timestamp": "2026-10-13T04:07:29.753338+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -47,36 +17,16 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-12T22:47:36.589849+00:00"
-  },
-  {
-    "repo": "SeitaBV/timely-beliefs",
-    "pr": 257,
-    "title": "Order database-backed belief sources by primary key",
-    "state": "OPEN",
-    "review": "None",
-    "fork_synced": false,
-    "ai_analysis": null,
-    "timestamp": "2026-10-12T22:47:36.589870+00:00"
+    "timestamp": "2026-10-13T04:07:29.753410+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
     "pr": 4154,
-    "title": "docs(tutorials): add end-to-end embedding bi-encoder training tutorial",
+    "title": "docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial",
     "state": "OPEN",
     "review": "COMMENTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-12T22:47:36.589891+00:00"
-  },
-  {
-    "repo": "docling-project/docling",
-    "pr": 4757,
-    "title": "fix(docx): emit textboxes in table cells once inside their cell",
-    "state": "MERGED",
-    "review": "None",
-    "fork_synced": true,
-    "ai_analysis": null,
-    "timestamp": "2026-10-12T22:47:36.589911+00:00"
+    "timestamp": "2026-10-13T04:07:29.753430+00:00"
   }
 ]

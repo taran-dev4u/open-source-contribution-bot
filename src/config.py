@@ -73,6 +73,13 @@ class BotConfig:
                 head_branch="fix/resample-instantaneous-resolution-guard",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="docling-project/docling",
+                fork_repo="taran-dev4u/docling",
+                pr_number=4820,
+                head_branch="fix/html-multi-image-figure-caption",
+                default_branch="main",
+            ),
         ]
     )
 

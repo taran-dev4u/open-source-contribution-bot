@@ -17,3 +17,4 @@ htmlcov/
 .ruff_cache/
 .env
 .env.local
+uv.lock

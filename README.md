@@ -10,8 +10,8 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-14 07:15:53 UTC`
-- **Active Monitored Pull Requests:** `4`
+- **Last Cloud Execution:** `2026-10-14 08:20:52 UTC`
+- **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
 - **Uncontested Issues Scouted:** `13`
@@ -26,6 +26,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial | 🟢 `OPEN` | `COMMENTED` | — |
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+| `docling-project/docling` | [#4820](https://github.com/docling-project/docling/pull/4820) | fix(html): prevent duplicate figure caption emission for multi-image figures | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 
 ---
 

@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-16T19:25:45.746349+00:00"
+    "timestamp": "2026-10-16T22:40:16.190727+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-16T19:25:45.746474+00:00"
+    "timestamp": "2026-10-16T22:40:16.190804+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -27,7 +27,7 @@
     "review": "COMMENTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-16T19:25:45.746530+00:00"
+    "timestamp": "2026-10-16T22:40:16.190879+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,6 +37,16 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-16T19:25:45.746574+00:00"
+    "timestamp": "2026-10-16T22:40:16.190926+00:00"
+  },
+  {
+    "repo": "docling-project/docling",
+    "pr": 4868,
+    "title": "fix(docx): normalize style type list to numbering to avoid load failure",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "ai_analysis": null,
+    "timestamp": "2026-10-16T22:40:16.190963+00:00"
   }
 ]

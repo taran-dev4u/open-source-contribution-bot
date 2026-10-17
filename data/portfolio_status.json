@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-17T20:45:00.001265+00:00"
+    "timestamp": "2026-10-17T23:51:17.768730+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-17T20:45:00.001390+00:00"
+    "timestamp": "2026-10-17T23:51:17.768805+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -26,8 +26,8 @@
     "state": "OPEN",
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": "### 1. Core Issue\nThe tutorial notebook and YAML contain multiple breaking discrepancies: an invalid batch size configuration for 8-GPU data parallel runs, broken Python recipe imports and method calls, disabled in-batch negatives despite tutorial claims, and post-training verification code that reloads the base Hugging Face checkpoint using an invalid export path instead of the fine-tuned step checkpoint.\n\n---\n\n### 2. Minimal Modifications Required\n\n#### A. Fix 8-GPU CLI Command & In-Batch Negatives (`tutorials/.../ministral_3b_embedding.yaml` or notebook CLI block)\nUpdate global batch size for 8 DP ranks (`4 * 8 = 32`) and enable in-batch negatives:\n```diff\n # CLI invocation:\n- torchrun --nproc_per_node=8 train.py ... trainer.global_batch_size=16 trainer.local_batch_size=4\n+ torchrun --nproc_per_node=8 train.py ... trainer",
-    "timestamp": "2026-10-17T20:45:00.001483+00:00"
+    "ai_analysis": null,
+    "timestamp": "2026-10-17T23:51:17.768871+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,6 +37,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-17T20:45:00.001566+00:00"
+    "timestamp": "2026-10-17T23:51:17.768934+00:00"
   }
 ]

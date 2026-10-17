@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-17 20:45:11 UTC`
+- **Last Cloud Execution:** `2026-10-17 23:51:24 UTC`
 - **Active Monitored Pull Requests:** `4`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -26,27 +26,6 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-
-### 🤖 Gemini AI Review Advisories
-
-#### `NVIDIA-NeMo/Automodel#4154`: docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial
-
-```markdown
-### 1. Core Issue
-The tutorial notebook and YAML contain multiple breaking discrepancies: an invalid batch size configuration for 8-GPU data parallel runs, broken Python recipe imports and method calls, disabled in-batch negatives despite tutorial claims, and post-training verification code that reloads the base Hugging Face checkpoint using an invalid export path instead of the fine-tuned step checkpoint.
-
----
-
-### 2. Minimal Modifications Required
-
-#### A. Fix 8-GPU CLI Command & In-Batch Negatives (`tutorials/.../ministral_3b_embedding.yaml` or notebook CLI block)
-Update global batch size for 8 DP ranks (`4 * 8 = 32`) and enable in-batch negatives:
-```diff
- # CLI invocation:
-- torchrun --nproc_per_node=8 train.py ... trainer.global_batch_size=16 trainer.local_batch_size=4
-+ torchrun --nproc_per_node=8 train.py ... trainer
-```
-
 
 ---
 

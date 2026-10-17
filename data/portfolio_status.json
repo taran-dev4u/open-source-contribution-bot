@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-17T20:43:10.038405+00:00"
+    "timestamp": "2026-10-17T20:45:00.001265+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-17T20:43:10.038646+00:00"
+    "timestamp": "2026-10-17T20:45:00.001390+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -26,8 +26,8 @@
     "state": "OPEN",
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": "### Core Issue\nThe tutorial contains several broken execution paths and config mismatches: an invalid batch size configuration for 8-GPU DP runs, non-runnable Python recipe code, post-training evaluation that reloads the base model instead of the fine-tuned checkpoint, an invalid checkpoint directory structure for export/loading, and disabled in-batch negatives contrary to the documentation.\n\n### Minimal Code Modifications\n\n#### 1. Config & Launch Command (Batch Size & In-Batch Negatives)\nIn the 8-GPU command and YAML, ensure batch size divisibility (`local_batch_size * dp_size <= global_batch_size`) and enable in-batch negatives:\n\n```yaml\n# config.yaml\ntrain:\n  global_batch_size: 32  # 4 local * 8 DP ranks = 32\n  local_batch_size: 4\nloss:\n  in_batch_negatives: true\n```\nOr in the CLI command:\n```bash\ntorchrun --nproc_per_node=8 train.py ... \\\n  train.global_batch_size=32 \\\n  loss.in_batch_negatives=true\n```\n\n#### 2. Python Training Block\nFix imports, correct the execution loop method, and resolve paths relative to the repo root:\n\n```python\nimport os\nfrom pathlib import Path\nfrom automodel.recipes.biencoder import TrainBiEncoderRecipe\nimport yaml\n\n# Anchor paths relative to repo root\nrepo_root",
-    "timestamp": "2026-10-17T20:43:10.038796+00:00"
+    "ai_analysis": "### 1. Core Issue\nThe tutorial notebook and YAML contain multiple breaking discrepancies: an invalid batch size configuration for 8-GPU data parallel runs, broken Python recipe imports and method calls, disabled in-batch negatives despite tutorial claims, and post-training verification code that reloads the base Hugging Face checkpoint using an invalid export path instead of the fine-tuned step checkpoint.\n\n---\n\n### 2. Minimal Modifications Required\n\n#### A. Fix 8-GPU CLI Command & In-Batch Negatives (`tutorials/.../ministral_3b_embedding.yaml` or notebook CLI block)\nUpdate global batch size for 8 DP ranks (`4 * 8 = 32`) and enable in-batch negatives:\n```diff\n # CLI invocation:\n- torchrun --nproc_per_node=8 train.py ... trainer.global_batch_size=16 trainer.local_batch_size=4\n+ torchrun --nproc_per_node=8 train.py ... trainer",
+    "timestamp": "2026-10-17T20:45:00.001483+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,16 +37,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-17T20:43:10.038916+00:00"
-  },
-  {
-    "repo": "docling-project/docling",
-    "pr": 4874,
-    "title": "fix(odf): keep generated table of contents and index text",
-    "state": "OPEN",
-    "review": "None",
-    "fork_synced": false,
-    "ai_analysis": null,
-    "timestamp": "2026-10-17T20:43:10.038983+00:00"
+    "timestamp": "2026-10-17T20:45:00.001566+00:00"
   }
 ]

@@ -10,8 +10,8 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-17 20:43:20 UTC`
-- **Active Monitored Pull Requests:** `5`
+- **Last Cloud Execution:** `2026-10-17 20:45:11 UTC`
+- **Active Monitored Pull Requests:** `4`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
 - **Uncontested Issues Scouted:** `11`
@@ -26,47 +26,25 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `docling-project/docling` | [#4874](https://github.com/docling-project/docling/pull/4874) | fix(odf): keep generated table of contents and index text | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 
 ### 🤖 Gemini AI Review Advisories
 
 #### `NVIDIA-NeMo/Automodel#4154`: docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial
 
 ```markdown
-### Core Issue
-The tutorial contains several broken execution paths and config mismatches: an invalid batch size configuration for 8-GPU DP runs, non-runnable Python recipe code, post-training evaluation that reloads the base model instead of the fine-tuned checkpoint, an invalid checkpoint directory structure for export/loading, and disabled in-batch negatives contrary to the documentation.
+### 1. Core Issue
+The tutorial notebook and YAML contain multiple breaking discrepancies: an invalid batch size configuration for 8-GPU data parallel runs, broken Python recipe imports and method calls, disabled in-batch negatives despite tutorial claims, and post-training verification code that reloads the base Hugging Face checkpoint using an invalid export path instead of the fine-tuned step checkpoint.
 
-### Minimal Code Modifications
+---
 
-#### 1. Config & Launch Command (Batch Size & In-Batch Negatives)
-In the 8-GPU command and YAML, ensure batch size divisibility (`local_batch_size * dp_size <= global_batch_size`) and enable in-batch negatives:
+### 2. Minimal Modifications Required
 
-```yaml
-# config.yaml
-train:
-  global_batch_size: 32  # 4 local * 8 DP ranks = 32
-  local_batch_size: 4
-loss:
-  in_batch_negatives: true
-```
-Or in the CLI command:
-```bash
-torchrun --nproc_per_node=8 train.py ... \
-  train.global_batch_size=32 \
-  loss.in_batch_negatives=true
-```
-
-#### 2. Python Training Block
-Fix imports, correct the execution loop method, and resolve paths relative to the repo root:
-
-```python
-import os
-from pathlib import Path
-from automodel.recipes.biencoder import TrainBiEncoderRecipe
-import yaml
-
-# Anchor paths relative to repo root
-repo_root
+#### A. Fix 8-GPU CLI Command & In-Batch Negatives (`tutorials/.../ministral_3b_embedding.yaml` or notebook CLI block)
+Update global batch size for 8 DP ranks (`4 * 8 = 32`) and enable in-batch negatives:
+```diff
+ # CLI invocation:
+- torchrun --nproc_per_node=8 train.py ... trainer.global_batch_size=16 trainer.local_batch_size=4
++ torchrun --nproc_per_node=8 train.py ... trainer
 ```
 
 

@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-17 16:54:37 UTC`
+- **Last Cloud Execution:** `2026-10-17 20:17:48 UTC`
 - **Active Monitored Pull Requests:** `4`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -24,8 +24,41 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `FlexMeasures/flexmeasures` | [#2448](https://github.com/FlexMeasures/flexmeasures/pull/2448) | feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial | 🟢 `OPEN` | `COMMENTED` | — |
+| `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+
+### 🤖 Gemini AI Review Advisories
+
+#### `NVIDIA-NeMo/Automodel#4154`: docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial
+
+```markdown
+### 1. Core Issue
+The tutorial contains several broken runtime paths and configuration mismatches: the 8-GPU CLI arguments fail batch divisibility checks, the Python training block uses invalid imports and methods, checkpoint paths omit the step subfolder (causing verification to reload base weights), and the in-batch negatives flag is disabled despite what the docs claim.
+
+### 2. Minimal Code Modifications
+
+#### Config & CLI Updates
+Adjust the advertised 8-GPU CLI batch parameters and enable in-batch negatives in the recipe YAML/CLI:
+```bash
+# Set global_batch_size divisible by (local_batch_size * dp_size) -> (4 * 8 = 32)
+torchrun --nproc_per_node=8 ... \
+    model.dataset.train.local_batch_size=4 \
+    model.dataset.train.global_batch_size=32 \
+    model.loss.in_batch_negatives=true
+```
+
+#### Python Training Block
+Import the correct class, use the native execution entry point, and resolve paths relative to repo root:
+```python
+from pathlib import Path
+from automodel.recipes.text_embedding import TrainBiEncoderRecipe  # adjust to exact import path
+
+# Ensure working directory resolves repo-relative paths in YAML
+repo_root = Path(__file__).resolve().parents[2]
+
+recipe = Train
+```
+
 
 ---
 

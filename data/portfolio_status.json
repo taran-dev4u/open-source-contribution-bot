@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-17T16:54:31.430514+00:00"
+    "timestamp": "2026-10-17T20:17:39.390834+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,17 +17,17 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-17T16:54:31.430573+00:00"
+    "timestamp": "2026-10-17T20:17:39.390890+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
     "pr": 4154,
     "title": "docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial",
     "state": "OPEN",
-    "review": "COMMENTED",
+    "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": null,
-    "timestamp": "2026-10-17T16:54:31.430602+00:00"
+    "ai_analysis": "### 1. Core Issue\nThe tutorial contains several broken runtime paths and configuration mismatches: the 8-GPU CLI arguments fail batch divisibility checks, the Python training block uses invalid imports and methods, checkpoint paths omit the step subfolder (causing verification to reload base weights), and the in-batch negatives flag is disabled despite what the docs claim.\n\n### 2. Minimal Code Modifications\n\n#### Config & CLI Updates\nAdjust the advertised 8-GPU CLI batch parameters and enable in-batch negatives in the recipe YAML/CLI:\n```bash\n# Set global_batch_size divisible by (local_batch_size * dp_size) -> (4 * 8 = 32)\ntorchrun --nproc_per_node=8 ... \\\n    model.dataset.train.local_batch_size=4 \\\n    model.dataset.train.global_batch_size=32 \\\n    model.loss.in_batch_negatives=true\n```\n\n#### Python Training Block\nImport the correct class, use the native execution entry point, and resolve paths relative to repo root:\n```python\nfrom pathlib import Path\nfrom automodel.recipes.text_embedding import TrainBiEncoderRecipe  # adjust to exact import path\n\n# Ensure working directory resolves repo-relative paths in YAML\nrepo_root = Path(__file__).resolve().parents[2]\n\nrecipe = Train",
+    "timestamp": "2026-10-17T20:17:39.390923+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,6 +37,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-17T16:54:31.430626+00:00"
+    "timestamp": "2026-10-17T20:17:39.390955+00:00"
   }
 ]

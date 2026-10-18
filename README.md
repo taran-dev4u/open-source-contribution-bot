@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-18 03:38:02 UTC`
+- **Last Cloud Execution:** `2026-10-18 08:41:29 UTC`
 - **Active Monitored Pull Requests:** `4`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -32,20 +32,16 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 #### `NVIDIA-NeMo/Automodel#4154`: docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial
 
 ```markdown
-### 1. Core Issues Raised
+### 1. Core Issue / Request
+The tutorial configuration silently drops small parameter updates due to BF16 optimizer master weights, triggers runaway disk usage by saving on every single-step epoch, and fails during checkpoint loading due to relative working directory mismatches, lexical path sorting, and a hardcoded non-existent checkpoint path.
 
-The tutorial has five execution bugs: BF16 AdamW drops layernorm updates due to lack of FP32 master weights, default per-epoch checkpointing produces ~2.75 TB of unneeded checkpoints on the 8-row schedule, lexical checkpoint sorting picks `epoch_9_step_9` instead of `epoch_99_step_99`, the deployment cell hardcodes a nonexistent step path (`epoch_0_step_100`), and relative path handling splits outputs between the notebook directory and repository root.
+### 2. Minimal Code Modification Required
 
----
-
-### 2. Minimal Code Modifications
-
-#### A. Training Config Update (`config.yaml`)
-Switch to `FusedAdam` with master weights, turn off epoch saves, and cap retention:
-
+**In the tutorial training YAML (`recipe.yaml` or embedded config):**
 ```yaml
 optim:
   optimizer:
+    # Use FusedAdam with master_weights: true to preserve FP32 precision during BF16 training
     _target_: apex.optimizers.FusedAdam
     lr: 2e-5
     master_weights: true
@@ -55,16 +51,9 @@ checkpoint:
   save_checkpoint_every_epoch: false
   ckpt_every_steps: 50
   save_top_k: 1
-  consolidate_on_save: false
 ```
 
-#### B. Notebook / Script Checkpoint Resolution & Shared Output Root
-Standardize on a single absolute root directory, use `find_latest_checkpoint`, and pass the resolved export path to inference/deployment:
-
-```python
-import os
-from pathlib import Path
-from nemo
+**In the tutorial notebook (`.
 ```
 
 

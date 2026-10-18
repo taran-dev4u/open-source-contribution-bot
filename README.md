@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-18 17:08:59 UTC`
+- **Last Cloud Execution:** `2026-10-18 20:17:13 UTC`
 - **Active Monitored Pull Requests:** `4`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -32,26 +32,30 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 #### `NVIDIA-NeMo/Automodel#4154`: docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial
 
 ```markdown
-### 1. Core Issue / Request
-The tutorial configuration silently drops small parameter updates by using plain BF16 AdamW without FP32 master weights, triggers unsustainable I/O by saving on every single-step epoch, and breaks downstream verification/deployment through broken path handling (lexicographical checkpoint sorting, path mismatches between CLI and notebook, and hardcoded step counts).
+### Core Issues
+The tutorial fails in real-world execution due to precision loss and checkpoint path handling: BF16 AdamW drops norm weight updates without FP32 master weights, default per-epoch saves trigger 100 redundant 27 GB checkpoint consolidations on the 8-row toy dataset, and working directory mismatches combined with lexical sorting load stale or nonexistent checkpoint paths.
 
 ---
 
-### 2. Minimal Code Modification
+### Minimal Code / Config Modifications
 
-#### A. Training Config (`tutorial_config.yaml`)
-Switch the optimizer to maintain FP32 master weights and restrict checkpoint saves:
+#### 1. Training Configuration (`config.yaml`)
+Switch to `FusedAdam` with master weights and disable per-epoch saving:
 
 ```yaml
-optimizer:
-  _target_: apex.optimizers.FusedAdam
-  lr: 2e-5
-  master_weights: true
+optim:
+  optimizer:
+    _target_: nemo_automodel.components.optim.FusedAdam
+    lr: 2e-5
+    master_weights: true
+    weight_decay: 0.01
 
-checkpointer:
+checkpoint:
   save_checkpoint_every_epoch: false
   ckpt_every_steps: 50
-  save_top_k:
+  save_last_checkpoint: true
+  keep_last_n_checkpoints: 1
+  consolidate_on_finish: true
 ```
 
 

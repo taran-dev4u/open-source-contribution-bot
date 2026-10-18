@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-18T08:41:21.673155+00:00"
+    "timestamp": "2026-10-18T13:49:23.586753+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-18T08:41:21.673207+00:00"
+    "timestamp": "2026-10-18T13:49:23.586819+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -26,8 +26,8 @@
     "state": "OPEN",
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": "### 1. Core Issue / Request\nThe tutorial configuration silently drops small parameter updates due to BF16 optimizer master weights, triggers runaway disk usage by saving on every single-step epoch, and fails during checkpoint loading due to relative working directory mismatches, lexical path sorting, and a hardcoded non-existent checkpoint path.\n\n### 2. Minimal Code Modification Required\n\n**In the tutorial training YAML (`recipe.yaml` or embedded config):**\n```yaml\noptim:\n  optimizer:\n    # Use FusedAdam with master_weights: true to preserve FP32 precision during BF16 training\n    _target_: apex.optimizers.FusedAdam\n    lr: 2e-5\n    master_weights: true\n    weight_decay: 0.01\n\ncheckpoint:\n  save_checkpoint_every_epoch: false\n  ckpt_every_steps: 50\n  save_top_k: 1\n```\n\n**In the tutorial notebook (`.",
-    "timestamp": "2026-10-18T08:41:21.673227+00:00"
+    "ai_analysis": "### 1. Core Issue / Request\nThe tutorial configuration silently drops norm-layer parameter updates by omitting FP32 master weights, floods disk space by saving consolidations on every single-step epoch, and breaks downstream verification/deployment via working-directory drift, lexicographical checkpoint sorting, and hardcoded output paths.\n\n---\n\n### 2. Minimal Code Modifications\n\n#### Training Configuration (`config.yaml`)\nUpdate optimizer settings to preserve FP32 master weights, disable per-epoch saving, and bound checkpoint retention:\n\n```yaml\noptim:\n  _target_: nemo_automodel.components.optim.FusedAdam\n  lr: 2e-5\n  betas: [0.9, 0.999]\n  eps: 1e-8\n  master_weights: true\n\ncheckpoint:\n  save_checkpoint_every_epoch: false\n  ckpt_every_steps: 50\n  save_top_k: 1\n  consolidate_on_finish: true\n```\n\n####",
+    "timestamp": "2026-10-18T13:49:23.586854+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,6 +37,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-18T08:41:21.673243+00:00"
+    "timestamp": "2026-10-18T13:49:23.586889+00:00"
   }
 ]

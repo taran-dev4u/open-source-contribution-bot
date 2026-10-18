@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-18 13:49:32 UTC`
+- **Last Cloud Execution:** `2026-10-18 17:08:59 UTC`
 - **Active Monitored Pull Requests:** `4`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -33,31 +33,25 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ```markdown
 ### 1. Core Issue / Request
-The tutorial configuration silently drops norm-layer parameter updates by omitting FP32 master weights, floods disk space by saving consolidations on every single-step epoch, and breaks downstream verification/deployment via working-directory drift, lexicographical checkpoint sorting, and hardcoded output paths.
+The tutorial configuration silently drops small parameter updates by using plain BF16 AdamW without FP32 master weights, triggers unsustainable I/O by saving on every single-step epoch, and breaks downstream verification/deployment through broken path handling (lexicographical checkpoint sorting, path mismatches between CLI and notebook, and hardcoded step counts).
 
 ---
 
-### 2. Minimal Code Modifications
+### 2. Minimal Code Modification
 
-#### Training Configuration (`config.yaml`)
-Update optimizer settings to preserve FP32 master weights, disable per-epoch saving, and bound checkpoint retention:
+#### A. Training Config (`tutorial_config.yaml`)
+Switch the optimizer to maintain FP32 master weights and restrict checkpoint saves:
 
 ```yaml
-optim:
-  _target_: nemo_automodel.components.optim.FusedAdam
+optimizer:
+  _target_: apex.optimizers.FusedAdam
   lr: 2e-5
-  betas: [0.9, 0.999]
-  eps: 1e-8
   master_weights: true
 
-checkpoint:
+checkpointer:
   save_checkpoint_every_epoch: false
   ckpt_every_steps: 50
-  save_top_k: 1
-  consolidate_on_finish: true
-```
-
-####
+  save_top_k:
 ```
 
 

@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-17T23:51:17.768730+00:00"
+    "timestamp": "2026-10-18T03:37:54.813172+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-17T23:51:17.768805+00:00"
+    "timestamp": "2026-10-18T03:37:54.813244+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -26,8 +26,8 @@
     "state": "OPEN",
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": null,
-    "timestamp": "2026-10-17T23:51:17.768871+00:00"
+    "ai_analysis": "### 1. Core Issues Raised\n\nThe tutorial has five execution bugs: BF16 AdamW drops layernorm updates due to lack of FP32 master weights, default per-epoch checkpointing produces ~2.75 TB of unneeded checkpoints on the 8-row schedule, lexical checkpoint sorting picks `epoch_9_step_9` instead of `epoch_99_step_99`, the deployment cell hardcodes a nonexistent step path (`epoch_0_step_100`), and relative path handling splits outputs between the notebook directory and repository root.\n\n---\n\n### 2. Minimal Code Modifications\n\n#### A. Training Config Update (`config.yaml`)\nSwitch to `FusedAdam` with master weights, turn off epoch saves, and cap retention:\n\n```yaml\noptim:\n  optimizer:\n    _target_: apex.optimizers.FusedAdam\n    lr: 2e-5\n    master_weights: true\n    weight_decay: 0.01\n\ncheckpoint:\n  save_checkpoint_every_epoch: false\n  ckpt_every_steps: 50\n  save_top_k: 1\n  consolidate_on_save: false\n```\n\n#### B. Notebook / Script Checkpoint Resolution & Shared Output Root\nStandardize on a single absolute root directory, use `find_latest_checkpoint`, and pass the resolved export path to inference/deployment:\n\n```python\nimport os\nfrom pathlib import Path\nfrom nemo",
+    "timestamp": "2026-10-18T03:37:54.813297+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,6 +37,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-17T23:51:17.768934+00:00"
+    "timestamp": "2026-10-18T03:37:54.813342+00:00"
   }
 ]

@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-17 23:51:24 UTC`
+- **Last Cloud Execution:** `2026-10-18 03:38:02 UTC`
 - **Active Monitored Pull Requests:** `4`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `11`
+- **Uncontested Issues Scouted:** `10`
 
 ---
 
@@ -26,6 +26,47 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+
+### 🤖 Gemini AI Review Advisories
+
+#### `NVIDIA-NeMo/Automodel#4154`: docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial
+
+```markdown
+### 1. Core Issues Raised
+
+The tutorial has five execution bugs: BF16 AdamW drops layernorm updates due to lack of FP32 master weights, default per-epoch checkpointing produces ~2.75 TB of unneeded checkpoints on the 8-row schedule, lexical checkpoint sorting picks `epoch_9_step_9` instead of `epoch_99_step_99`, the deployment cell hardcodes a nonexistent step path (`epoch_0_step_100`), and relative path handling splits outputs between the notebook directory and repository root.
+
+---
+
+### 2. Minimal Code Modifications
+
+#### A. Training Config Update (`config.yaml`)
+Switch to `FusedAdam` with master weights, turn off epoch saves, and cap retention:
+
+```yaml
+optim:
+  optimizer:
+    _target_: apex.optimizers.FusedAdam
+    lr: 2e-5
+    master_weights: true
+    weight_decay: 0.01
+
+checkpoint:
+  save_checkpoint_every_epoch: false
+  ckpt_every_steps: 50
+  save_top_k: 1
+  consolidate_on_save: false
+```
+
+#### B. Notebook / Script Checkpoint Resolution & Shared Output Root
+Standardize on a single absolute root directory, use `find_latest_checkpoint`, and pass the resolved export path to inference/deployment:
+
+```python
+import os
+from pathlib import Path
+from nemo
+```
+
 
 ---
 
@@ -54,9 +95,9 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `Rekin226/aquascope` | [#444](https://github.com/Rekin226/aquascope/issues/444) | Give the Archive its own DOI, so people stop citing the library for the data | `documentation` `enhancement` `help wanted` |
 | `NVIDIA-NeMo/Automodel` | [#533](https://github.com/NVIDIA-NeMo/Automodel/issues/533) | Make StatefulDataloader be DP-aware | `enhancement` `good first issue` |
 | `NVIDIA-NeMo/Automodel` | [#2462](https://github.com/NVIDIA-NeMo/Automodel/issues/2462) | Support MiMo-V2.5-Pro | `enhancement` `good first issue` |
-| `docling-project/docling` | [#327](https://github.com/docling-project/docling/issues/327) | Standardized Access to Common Email and Calendar Formats | `enhancement` `help wanted` `icebox` |
 | `FlexMeasures/flexmeasures` | [#1216](https://github.com/FlexMeasures/flexmeasures/issues/1216) | Add filter by asset type in the asset UI page | `good first issue` `UI` |
 | `FlexMeasures/flexmeasures` | [#1954](https://github.com/FlexMeasures/flexmeasures/issues/1954) | KPI Averaging Ignores Missing Days (UI/UX Issue) | `bug` `good first issue` |
+| `FlexMeasures/flexmeasures` | [#601](https://github.com/FlexMeasures/flexmeasures/issues/601) | Support TimescaleDB | `help wanted` `Data` |
 
 ---
 

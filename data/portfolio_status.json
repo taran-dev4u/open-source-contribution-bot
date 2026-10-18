@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-18T20:17:04.605448+00:00"
+    "timestamp": "2026-10-18T23:58:33.888418+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-18T20:17:04.605524+00:00"
+    "timestamp": "2026-10-18T23:58:33.888492+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -26,8 +26,8 @@
     "state": "OPEN",
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": "### Core Issues\nThe tutorial fails in real-world execution due to precision loss and checkpoint path handling: BF16 AdamW drops norm weight updates without FP32 master weights, default per-epoch saves trigger 100 redundant 27 GB checkpoint consolidations on the 8-row toy dataset, and working directory mismatches combined with lexical sorting load stale or nonexistent checkpoint paths.\n\n---\n\n### Minimal Code / Config Modifications\n\n#### 1. Training Configuration (`config.yaml`)\nSwitch to `FusedAdam` with master weights and disable per-epoch saving:\n\n```yaml\noptim:\n  optimizer:\n    _target_: nemo_automodel.components.optim.FusedAdam\n    lr: 2e-5\n    master_weights: true\n    weight_decay: 0.01\n\ncheckpoint:\n  save_checkpoint_every_epoch: false\n  ckpt_every_steps: 50\n  save_last_checkpoint: true\n  keep_last_n_checkpoints: 1\n  consolidate_on_finish: true",
-    "timestamp": "2026-10-18T20:17:04.605572+00:00"
+    "ai_analysis": null,
+    "timestamp": "2026-10-18T23:58:33.888541+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,6 +37,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-18T20:17:04.605620+00:00"
+    "timestamp": "2026-10-18T23:58:33.888583+00:00"
   }
 ]

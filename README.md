@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-18 20:17:13 UTC`
+- **Last Cloud Execution:** `2026-10-18 23:58:42 UTC`
 - **Active Monitored Pull Requests:** `4`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -26,38 +26,6 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-
-### 🤖 Gemini AI Review Advisories
-
-#### `NVIDIA-NeMo/Automodel#4154`: docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial
-
-```markdown
-### Core Issues
-The tutorial fails in real-world execution due to precision loss and checkpoint path handling: BF16 AdamW drops norm weight updates without FP32 master weights, default per-epoch saves trigger 100 redundant 27 GB checkpoint consolidations on the 8-row toy dataset, and working directory mismatches combined with lexical sorting load stale or nonexistent checkpoint paths.
-
----
-
-### Minimal Code / Config Modifications
-
-#### 1. Training Configuration (`config.yaml`)
-Switch to `FusedAdam` with master weights and disable per-epoch saving:
-
-```yaml
-optim:
-  optimizer:
-    _target_: nemo_automodel.components.optim.FusedAdam
-    lr: 2e-5
-    master_weights: true
-    weight_decay: 0.01
-
-checkpoint:
-  save_checkpoint_every_epoch: false
-  ckpt_every_steps: 50
-  save_last_checkpoint: true
-  keep_last_n_checkpoints: 1
-  consolidate_on_finish: true
-```
-
 
 ---
 

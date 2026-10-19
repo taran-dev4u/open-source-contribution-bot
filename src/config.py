@@ -73,6 +73,20 @@ class BotConfig:
                 head_branch="fix/resample-instantaneous-resolution-guard",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="aeon-toolkit/aeon",
+                fork_repo="taran-dev4u/aeon",
+                pr_number=3925,
+                head_branch="fix/time-series-kmeans-callable-averaging",
+                default_branch="main",
+            ),
+            MonitoredPR(
+                upstream_repo="optuna/optuna",
+                fork_repo="taran-dev4u/optuna",
+                pr_number=6922,
+                head_branch="fix/retry-callback-system-attrs",
+                default_branch="master",
+            ),
         ]
     )
 

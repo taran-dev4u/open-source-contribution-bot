@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-18T23:58:33.888418+00:00"
+    "timestamp": "2026-10-19T04:26:58.793490+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-18T23:58:33.888492+00:00"
+    "timestamp": "2026-10-19T04:26:58.793550+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -26,8 +26,8 @@
     "state": "OPEN",
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": null,
-    "timestamp": "2026-10-18T23:58:33.888541+00:00"
+    "ai_analysis": "### 1. Core Issues\nThe tutorial recipe silently drops norm updates due to BF16 AdamW precision and creates ~2.7 TB of checkpoint churn by saving on every single-step epoch. Furthermore, notebook verification and deployment fail due to lexical checkpoint sorting, cwd mismatches with the CLI, and a hardcoded, non-existent step path (`epoch_0_step",
+    "timestamp": "2026-10-19T04:26:58.793604+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,6 +37,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-18T23:58:33.888583+00:00"
+    "timestamp": "2026-10-19T04:26:58.793633+00:00"
   }
 ]

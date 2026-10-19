@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-19T12:31:03.249335+00:00"
+    "timestamp": "2026-10-19T19:42:21.152162+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,17 +17,17 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-19T12:31:03.249414+00:00"
+    "timestamp": "2026-10-19T19:42:21.152235+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
     "pr": 4154,
     "title": "docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial",
     "state": "OPEN",
-    "review": "CHANGES_REQUESTED",
+    "review": "COMMENTED",
     "fork_synced": false,
-    "ai_analysis": "### Core Issues\nThe tutorial contains broken checkpoint pathing across CLI/notebook working directories, silently falls back to an unnormalized causal base model if the checkpoint is missing, triggers unsustainable per-step checkpointing (~2.75 TB projected), and",
-    "timestamp": "2026-10-19T12:31:03.249478+00:00"
+    "ai_analysis": null,
+    "timestamp": "2026-10-19T19:42:21.152279+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,6 +37,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-19T12:31:03.249533+00:00"
+    "timestamp": "2026-10-19T19:42:21.152316+00:00"
   }
 ]

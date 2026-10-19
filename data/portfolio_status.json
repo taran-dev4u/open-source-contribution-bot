@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-19T19:42:21.152162+00:00"
+    "timestamp": "2026-10-19T22:08:23.453960+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-19T19:42:21.152235+00:00"
+    "timestamp": "2026-10-19T22:08:23.454019+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -27,7 +27,7 @@
     "review": "COMMENTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-19T19:42:21.152279+00:00"
+    "timestamp": "2026-10-19T22:08:23.454044+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,6 +37,26 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-19T19:42:21.152316+00:00"
+    "timestamp": "2026-10-19T22:08:23.454070+00:00"
+  },
+  {
+    "repo": "aeon-toolkit/aeon",
+    "pr": 3925,
+    "title": "[BUG] Allow callable averaging_method in TimeSeriesKMeans",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "ai_analysis": null,
+    "timestamp": "2026-10-19T22:08:23.454088+00:00"
+  },
+  {
+    "repo": "optuna/optuna",
+    "pr": 6922,
+    "title": "Avoid copying pruner and constraint system attrs into retried trial",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "ai_analysis": null,
+    "timestamp": "2026-10-19T22:08:23.454101+00:00"
   }
 ]

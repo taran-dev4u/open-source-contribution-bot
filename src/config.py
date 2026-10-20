@@ -80,6 +80,13 @@ class BotConfig:
                 head_branch="fix/time-series-kmeans-callable-averaging",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="docling-project/docling",
+                fork_repo="taran-dev4u/docling",
+                pr_number=4921,
+                head_branch="fix/file-uri-image-base-path",
+                default_branch="main",
+            ),
         ]
     )
 

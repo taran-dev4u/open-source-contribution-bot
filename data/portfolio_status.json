@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-20T03:58:44.725804+00:00"
+    "timestamp": "2026-10-20T09:21:21.160458+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-20T03:58:44.725853+00:00"
+    "timestamp": "2026-10-20T09:21:21.160535+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -27,7 +27,7 @@
     "review": "COMMENTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-20T03:58:44.725887+00:00"
+    "timestamp": "2026-10-20T09:21:21.160587+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-20T03:58:44.725936+00:00"
+    "timestamp": "2026-10-20T09:21:21.160633+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -47,16 +47,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-20T03:58:44.725986+00:00"
-  },
-  {
-    "repo": "optuna/optuna",
-    "pr": 6922,
-    "title": "Avoid copying pruner and constraint system attrs into retried trial",
-    "state": "OPEN",
-    "review": "None",
-    "fork_synced": false,
-    "ai_analysis": null,
-    "timestamp": "2026-10-20T03:58:44.726032+00:00"
+    "timestamp": "2026-10-20T09:21:21.160679+00:00"
   }
 ]

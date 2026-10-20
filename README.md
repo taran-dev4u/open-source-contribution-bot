@@ -10,8 +10,8 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-20 03:58:53 UTC`
-- **Active Monitored Pull Requests:** `6`
+- **Last Cloud Execution:** `2026-10-20 09:21:29 UTC`
+- **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
 - **Uncontested Issues Scouted:** `9`
@@ -27,7 +27,6 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial | 🟢 `OPEN` | `COMMENTED` | — |
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `aeon-toolkit/aeon` | [#3925](https://github.com/aeon-toolkit/aeon/pull/3925) | [BUG] Allow callable averaging_method in TimeSeriesKMeans | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `optuna/optuna` | [#6922](https://github.com/optuna/optuna/pull/6922) | Avoid copying pruner and constraint system attrs into retried trial | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 
 ---
 

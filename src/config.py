@@ -80,6 +80,13 @@ class BotConfig:
                 head_branch="mnt/warping-alignment-path-distances",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="DS4SD/docling",
+                fork_repo="taran-dev4u/docling",
+                pr_number=4943,
+                head_branch="fix/jats-citation-hyperlinks",
+                default_branch="main",
+            ),
         ]
     )
 

@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-21T09:12:01.175514+00:00"
+    "timestamp": "2026-10-21T14:55:55.533548+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-21T09:12:01.175571+00:00"
+    "timestamp": "2026-10-21T14:55:55.533626+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -27,7 +27,7 @@
     "review": "COMMENTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-21T09:12:01.175593+00:00"
+    "timestamp": "2026-10-21T14:55:55.533682+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,16 +37,16 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-21T09:12:01.175613+00:00"
+    "timestamp": "2026-10-21T14:55:55.533736+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
-    "pr": 3925,
-    "title": "[BUG] Allow callable averaging_method in TimeSeriesKMeans",
+    "pr": 3932,
+    "title": "[MNT] Parametrise test_warping over ALIGNMENT_PATH",
     "state": "OPEN",
-    "review": "APPROVED",
+    "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-21T09:12:01.175632+00:00"
+    "timestamp": "2026-10-21T14:55:55.533789+00:00"
   }
 ]

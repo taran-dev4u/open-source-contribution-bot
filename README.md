@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-21 14:56:09 UTC`
+- **Last Cloud Execution:** `2026-10-21 19:58:07 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `9`
+- **Uncontested Issues Scouted:** `10`
 
 ---
 
@@ -50,6 +50,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | :--- | :--- | :--- | :--- |
 | `Rekin226/aquascope` | [#473](https://github.com/Rekin226/aquascope/issues/473) | Audit Registry Attribution Against First-Party Terms | `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
+| `Rekin226/aquascope` | [#443](https://github.com/Rekin226/aquascope/issues/443) | Say what the Archive is: 45,919 catalogued and ~1,000 mirrored, stated the same way everywhere | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#346](https://github.com/Rekin226/aquascope/issues/346) | Brazil ANA water quality (RNQA): find out whether it is reachable programmatically, and collect it if so | `help wanted` `new-collector` `good second issue` |
 | `Rekin226/aquascope` | [#444](https://github.com/Rekin226/aquascope/issues/444) | Give the Archive its own DOI, so people stop citing the library for the data | `documentation` `enhancement` `help wanted` |
 | `NVIDIA-NeMo/Automodel` | [#533](https://github.com/NVIDIA-NeMo/Automodel/issues/533) | Make StatefulDataloader be DP-aware | `enhancement` `good first issue` |

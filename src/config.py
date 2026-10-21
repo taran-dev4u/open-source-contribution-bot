@@ -73,13 +73,6 @@ class BotConfig:
                 head_branch="fix/resample-instantaneous-resolution-guard",
                 default_branch="main",
             ),
-            MonitoredPR(
-                upstream_repo="aeon-toolkit/aeon",
-                fork_repo="taran-dev4u/aeon",
-                pr_number=3925,
-                head_branch="fix/time-series-kmeans-callable-averaging",
-                default_branch="main",
-            ),
         ]
     )
 

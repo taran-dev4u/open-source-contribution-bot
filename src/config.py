@@ -73,6 +73,13 @@ class BotConfig:
                 head_branch="fix/resample-instantaneous-resolution-guard",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="aeon-toolkit/aeon",
+                fork_repo="taran-dev4u/aeon",
+                pr_number=3932,
+                head_branch="mnt/warping-alignment-path-distances",
+                default_branch="main",
+            ),
         ]
     )
 

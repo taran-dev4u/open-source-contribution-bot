@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-21T19:57:58.557786+00:00"
+    "timestamp": "2026-10-21T22:09:38.486882+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-21T19:57:58.557846+00:00"
+    "timestamp": "2026-10-21T22:09:38.486976+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -27,7 +27,7 @@
     "review": "COMMENTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-21T19:57:58.557873+00:00"
+    "timestamp": "2026-10-21T22:09:38.487178+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-21T19:57:58.557915+00:00"
+    "timestamp": "2026-10-21T22:09:38.487298+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -47,6 +47,16 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-21T19:57:58.557934+00:00"
+    "timestamp": "2026-10-21T22:09:38.487397+00:00"
+  },
+  {
+    "repo": "docling-project/docling",
+    "pr": 4951,
+    "title": "fix(docx): preserve nested list hierarchy across empty spacer paragraphs",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "ai_analysis": null,
+    "timestamp": "2026-10-21T22:09:38.487504+00:00"
   }
 ]

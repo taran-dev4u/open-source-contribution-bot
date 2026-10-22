@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-22T19:49:31.690026+00:00"
+    "timestamp": "2026-10-22T23:02:52.438696+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-22T19:49:31.690087+00:00"
+    "timestamp": "2026-10-22T23:02:52.438773+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -27,7 +27,7 @@
     "review": "COMMENTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-22T19:49:31.690111+00:00"
+    "timestamp": "2026-10-22T23:02:52.438820+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-22T19:49:31.690135+00:00"
+    "timestamp": "2026-10-22T23:02:52.438859+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-22T19:49:31.690150+00:00"
+    "timestamp": "2026-10-22T23:02:52.438897+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -57,6 +57,16 @@
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-22T19:49:31.690161+00:00"
+    "timestamp": "2026-10-22T23:02:52.438938+00:00"
+  },
+  {
+    "repo": "Rekin226/aquascope",
+    "pr": 614,
+    "title": "fix(registry): use OPW waterlevel.ie suggested attribution for ireland_opw",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "ai_analysis": null,
+    "timestamp": "2026-10-22T23:02:52.438974+00:00"
   }
 ]

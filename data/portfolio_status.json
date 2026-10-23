@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-23T03:52:55.834534+00:00"
+    "timestamp": "2026-10-23T09:11:06.738333+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-23T03:52:55.834572+00:00"
+    "timestamp": "2026-10-23T09:11:06.738402+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -27,7 +27,7 @@
     "review": "COMMENTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-23T03:52:55.834591+00:00"
+    "timestamp": "2026-10-23T09:11:06.738428+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-23T03:52:55.834629+00:00"
+    "timestamp": "2026-10-23T09:11:06.738449+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-23T03:52:55.834645+00:00"
+    "timestamp": "2026-10-23T09:11:06.738467+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -57,6 +57,16 @@
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-23T03:52:55.834660+00:00"
+    "timestamp": "2026-10-23T09:11:06.738487+00:00"
+  },
+  {
+    "repo": "Rekin226/aquascope",
+    "pr": 617,
+    "title": "fix(registry): update pegelonline license to DL-DE-ZERO-2.0 and attribution",
+    "state": "MERGED",
+    "review": "None",
+    "fork_synced": true,
+    "ai_analysis": null,
+    "timestamp": "2026-10-23T09:11:06.738509+00:00"
   }
 ]

@@ -87,6 +87,13 @@ class BotConfig:
                 head_branch="fix/docx-nested-list-empty-paragraphs",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="Rekin226/aquascope",
+                fork_repo="taran-dev4u/aquascope",
+                pr_number=618,
+                head_branch="fix/copernicus-license-473",
+                default_branch="main",
+            ),
         ]
     )
 

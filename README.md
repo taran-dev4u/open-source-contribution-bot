@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-24 08:44:48 UTC`
-- **Active Monitored Pull Requests:** `6`
+- **Last Cloud Execution:** `2026-10-24 13:53:18 UTC`
+- **Active Monitored Pull Requests:** `7`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `10`
+- **Uncontested Issues Scouted:** `9`
 
 ---
 
@@ -28,6 +28,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `aeon-toolkit/aeon` | [#3932](https://github.com/aeon-toolkit/aeon/pull/3932) | [MNT] Parametrise test_warping over ALIGNMENT_PATH | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `docling-project/docling` | [#4951](https://github.com/docling-project/docling/pull/4951) | fix(docx): preserve nested list hierarchy across empty spacer paragraphs | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
+| `Rekin226/aquascope` | [#618](https://github.com/Rekin226/aquascope/pull/618) | fix(registry): update copernicus license to CC-BY-4.0 and attribution | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 
 ---
 
@@ -49,7 +50,6 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
-| `Rekin226/aquascope` | [#473](https://github.com/Rekin226/aquascope/issues/473) | Audit Registry Attribution Against First-Party Terms | `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#438](https://github.com/Rekin226/aquascope/issues/438) | Survey: which of our 38 sources publish a quality flag, and what do the values mean? | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#432](https://github.com/Rekin226/aquascope/issues/432) | The Windows leg lands red: 13 failures, all test-environment assumptions | `bug` `help wanted` `testing` |

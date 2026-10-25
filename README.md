@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-25 17:28:44 UTC`
+- **Last Cloud Execution:** `2026-10-25 20:32:28 UTC`
 - **Active Monitored Pull Requests:** `7`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `8`
+- **Uncontested Issues Scouted:** `7`
 
 ---
 
@@ -50,7 +50,6 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
-| `Rekin226/aquascope` | [#438](https://github.com/Rekin226/aquascope/issues/438) | Survey: which of our 38 sources publish a quality flag, and what do the values mean? | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#346](https://github.com/Rekin226/aquascope/issues/346) | Brazil ANA water quality (RNQA): find out whether it is reachable programmatically, and collect it if so | `help wanted` `new-collector` `good second issue` |
 | `NVIDIA-NeMo/Automodel` | [#533](https://github.com/NVIDIA-NeMo/Automodel/issues/533) | Make StatefulDataloader be DP-aware | `enhancement` `good first issue` |

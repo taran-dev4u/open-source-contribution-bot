@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-26T10:00:32.424781+00:00"
+    "timestamp": "2026-10-26T16:44:33.146631+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-26T10:00:32.424853+00:00"
+    "timestamp": "2026-10-26T16:44:33.146694+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -27,7 +27,7 @@
     "review": "COMMENTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-26T10:00:32.424905+00:00"
+    "timestamp": "2026-10-26T16:44:33.146734+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-26T10:00:32.424950+00:00"
+    "timestamp": "2026-10-26T16:44:33.146774+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-26T10:00:32.424992+00:00"
+    "timestamp": "2026-10-26T16:44:33.146816+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -57,16 +57,16 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-26T10:00:32.425036+00:00"
+    "timestamp": "2026-10-26T16:44:33.146859+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
     "pr": 618,
     "title": "fix(registry): update copernicus license to CC-BY-4.0 and attribution",
-    "state": "OPEN",
-    "review": "CHANGES_REQUESTED",
-    "fork_synced": false,
+    "state": "MERGED",
+    "review": "None",
+    "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-10-26T10:00:32.425078+00:00"
+    "timestamp": "2026-10-26T16:44:33.146894+00:00"
   }
 ]

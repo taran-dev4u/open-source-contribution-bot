@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-26 16:44:44 UTC`
+- **Last Cloud Execution:** `2026-10-26 22:25:03 UTC`
 - **Active Monitored Pull Requests:** `6`
 - **Total Successfully Merged:** `1`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -24,7 +24,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `FlexMeasures/flexmeasures` | [#2448](https://github.com/FlexMeasures/flexmeasures/pull/2448) | feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial | 🟢 `OPEN` | `COMMENTED` | — |
+| `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial | 🟢 `OPEN` | ✅ `APPROVED` | — |
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `aeon-toolkit/aeon` | [#3932](https://github.com/aeon-toolkit/aeon/pull/3932) | [MNT] Parametrise test_warping over ALIGNMENT_PATH | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `docling-project/docling` | [#4951](https://github.com/docling-project/docling/pull/4951) | fix(docx): preserve nested list hierarchy across empty spacer paragraphs | 🟢 `OPEN` | ✅ `APPROVED` | — |
@@ -50,11 +50,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
-| `Rekin226/aquascope` | [#473](https://github.com/Rekin226/aquascope/issues/473) | Audit Registry Attribution Against First-Party Terms | `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#438](https://github.com/Rekin226/aquascope/issues/438) | Survey: which of our 38 sources publish a quality flag, and what do the values mean? | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
-| `Rekin226/aquascope` | [#346](https://github.com/Rekin226/aquascope/issues/346) | Brazil ANA water quality (RNQA): find out whether it is reachable programmatically, and collect it if so | `help wanted` `new-collector` `good second issue` |
-| `Rekin226/aquascope` | [#432](https://github.com/Rekin226/aquascope/issues/432) | The Windows leg lands red: 13 failures, all test-environment assumptions | `bug` `help wanted` `testing` |
+| `Rekin226/aquascope` | [#662](https://github.com/Rekin226/aquascope/issues/662) | Sketchpad: draw a reservoir and see it flatten a flood (level-pool routing) | `enhancement` `help wanted` `methodology` |
+| `Rekin226/aquascope` | [#661](https://github.com/Rekin226/aquascope/issues/661) | Sketchpad: draw a land-use change and see the peak-flow change (SCS curve number) | `enhancement` `help wanted` `methodology` |
+| `Rekin226/aquascope` | [#660](https://github.com/Rekin226/aquascope/issues/660) | Sketchpad: drop a pumping well and see the drawdown (Theis) | `enhancement` `help wanted` `methodology` |
 | `NVIDIA-NeMo/Automodel` | [#533](https://github.com/NVIDIA-NeMo/Automodel/issues/533) | Make StatefulDataloader be DP-aware | `enhancement` `good first issue` |
 | `NVIDIA-NeMo/Automodel` | [#2462](https://github.com/NVIDIA-NeMo/Automodel/issues/2462) | Support MiMo-V2.5-Pro | `enhancement` `good first issue` |
 | `FlexMeasures/flexmeasures` | [#1216](https://github.com/FlexMeasures/flexmeasures/issues/1216) | Add filter by asset type in the asset UI page | `good first issue` `UI` |

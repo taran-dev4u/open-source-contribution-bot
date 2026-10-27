@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-27 04:11:54 UTC`
+- **Last Cloud Execution:** `2026-10-27 11:47:25 UTC`
 - **Active Monitored Pull Requests:** `6`
 - **Total Successfully Merged:** `1`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `11`
+- **Uncontested Issues Scouted:** `9`
 
 ---
 
@@ -50,16 +50,15 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
+| `Rekin226/aquascope` | [#207](https://github.com/Rekin226/aquascope/issues/207) | Registry: verify data licences for the nine sources still marked unknown (gates the Archive mirroring) | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#438](https://github.com/Rekin226/aquascope/issues/438) | Survey: which of our 38 sources publish a quality flag, and what do the values mean? | `documentation` `help wanted` `good first issue` |
-| `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
-| `Rekin226/aquascope` | [#663](https://github.com/Rekin226/aquascope/issues/663) | Sketchpad: draw a levee or a breach and rerun the flood | `enhancement` `help wanted` `good second issue` |
 | `Rekin226/aquascope` | [#662](https://github.com/Rekin226/aquascope/issues/662) | Sketchpad: draw a reservoir and see it flatten a flood (level-pool routing) | `enhancement` `help wanted` `methodology` |
-| `Rekin226/aquascope` | [#661](https://github.com/Rekin226/aquascope/issues/661) | Sketchpad: draw a land-use change and see the peak-flow change (SCS curve number) | `enhancement` `help wanted` `methodology` |
-| `Rekin226/aquascope` | [#660](https://github.com/Rekin226/aquascope/issues/660) | Sketchpad: drop a pumping well and see the drawdown (Theis) | `enhancement` `help wanted` `methodology` |
 | `NVIDIA-NeMo/Automodel` | [#533](https://github.com/NVIDIA-NeMo/Automodel/issues/533) | Make StatefulDataloader be DP-aware | `enhancement` `good first issue` |
 | `NVIDIA-NeMo/Automodel` | [#2462](https://github.com/NVIDIA-NeMo/Automodel/issues/2462) | Support MiMo-V2.5-Pro | `enhancement` `good first issue` |
+| `docling-project/docling` | [#327](https://github.com/docling-project/docling/issues/327) | Standardized Access to Common Email and Calendar Formats | `enhancement` `help wanted` `icebox` |
 | `FlexMeasures/flexmeasures` | [#1216](https://github.com/FlexMeasures/flexmeasures/issues/1216) | Add filter by asset type in the asset UI page | `good first issue` `UI` |
 | `FlexMeasures/flexmeasures` | [#1954](https://github.com/FlexMeasures/flexmeasures/issues/1954) | KPI Averaging Ignores Missing Days (UI/UX Issue) | `bug` `good first issue` |
+| `FlexMeasures/flexmeasures` | [#601](https://github.com/FlexMeasures/flexmeasures/issues/601) | Support TimescaleDB | `help wanted` `Data` |
 
 ---
 

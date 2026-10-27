@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-27 11:47:25 UTC`
+- **Last Cloud Execution:** `2026-10-27 17:42:07 UTC`
 - **Active Monitored Pull Requests:** `6`
 - **Total Successfully Merged:** `1`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `9`
+- **Uncontested Issues Scouted:** `10`
 
 ---
 
@@ -27,7 +27,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `NVIDIA-NeMo/Automodel` | [#4154](https://github.com/NVIDIA-NeMo/Automodel/pull/4154) | docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial | 🟢 `OPEN` | ✅ `APPROVED` | — |
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `aeon-toolkit/aeon` | [#3932](https://github.com/aeon-toolkit/aeon/pull/3932) | [MNT] Parametrise test_warping over ALIGNMENT_PATH | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `docling-project/docling` | [#4951](https://github.com/docling-project/docling/pull/4951) | fix(docx): preserve nested list hierarchy across empty spacer paragraphs | 🟢 `OPEN` | ✅ `APPROVED` | — |
+| `docling-project/docling` | [#4951](https://github.com/docling-project/docling/pull/4951) | fix(docx): preserve nested list hierarchy across empty spacer paragraphs | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `Rekin226/aquascope` | [#618](https://github.com/Rekin226/aquascope/pull/618) | fix(registry): update copernicus license to CC-BY-4.0 and attribution | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
 
 ---
@@ -52,7 +52,8 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | :--- | :--- | :--- | :--- |
 | `Rekin226/aquascope` | [#207](https://github.com/Rekin226/aquascope/issues/207) | Registry: verify data licences for the nine sources still marked unknown (gates the Archive mirroring) | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#438](https://github.com/Rekin226/aquascope/issues/438) | Survey: which of our 38 sources publish a quality flag, and what do the values mean? | `documentation` `help wanted` `good first issue` |
-| `Rekin226/aquascope` | [#662](https://github.com/Rekin226/aquascope/issues/662) | Sketchpad: draw a reservoir and see it flatten a flood (level-pool routing) | `enhancement` `help wanted` `methodology` |
+| `Rekin226/aquascope` | [#444](https://github.com/Rekin226/aquascope/issues/444) | Give the Archive its own DOI, so people stop citing the library for the data | `documentation` `enhancement` `help wanted` |
+| `Rekin226/aquascope` | [#346](https://github.com/Rekin226/aquascope/issues/346) | Brazil ANA water quality (RNQA): find out whether it is reachable programmatically, and collect it if so | `help wanted` `new-collector` `good second issue` |
 | `NVIDIA-NeMo/Automodel` | [#533](https://github.com/NVIDIA-NeMo/Automodel/issues/533) | Make StatefulDataloader be DP-aware | `enhancement` `good first issue` |
 | `NVIDIA-NeMo/Automodel` | [#2462](https://github.com/NVIDIA-NeMo/Automodel/issues/2462) | Support MiMo-V2.5-Pro | `enhancement` `good first issue` |
 | `docling-project/docling` | [#327](https://github.com/docling-project/docling/issues/327) | Standardized Access to Common Email and Calendar Formats | `enhancement` `help wanted` `icebox` |

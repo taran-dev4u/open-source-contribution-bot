@@ -90,8 +90,8 @@ class BotConfig:
             MonitoredPR(
                 upstream_repo="Rekin226/aquascope",
                 fork_repo="taran-dev4u/aquascope",
-                pr_number=618,
-                head_branch="fix/copernicus-license-473",
+                pr_number=653,
+                head_branch="fix/south-africa-dws-attribution-473",
                 default_branch="main",
             ),
         ]

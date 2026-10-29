@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-28T22:20:15.892457+00:00"
+    "timestamp": "2026-10-29T04:54:09.625730+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,17 +17,17 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-28T22:20:15.892499+00:00"
+    "timestamp": "2026-10-29T04:54:09.625799+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
     "pr": 4154,
     "title": "docs(tutorials): add Ministral-3-3B text embedding fine-tuning tutorial",
-    "state": "OPEN",
-    "review": "COMMENTED",
-    "fork_synced": false,
+    "state": "MERGED",
+    "review": "None",
+    "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-10-28T22:20:15.892516+00:00"
+    "timestamp": "2026-10-29T04:54:09.625855+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-28T22:20:15.892544+00:00"
+    "timestamp": "2026-10-29T04:54:09.625907+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-28T22:20:15.892569+00:00"
+    "timestamp": "2026-10-29T04:54:09.625974+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -57,16 +57,16 @@
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-28T22:20:15.892582+00:00"
+    "timestamp": "2026-10-29T04:54:09.626044+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
-    "pr": 618,
-    "title": "fix(registry): update copernicus license to CC-BY-4.0 and attribution",
-    "state": "MERGED",
-    "review": "None",
-    "fork_synced": true,
+    "pr": 653,
+    "title": "fix(registry): update south_africa_dws attribution",
+    "state": "OPEN",
+    "review": "CHANGES_REQUESTED",
+    "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-10-28T22:20:15.892596+00:00"
+    "timestamp": "2026-10-29T04:54:09.626102+00:00"
   }
 ]

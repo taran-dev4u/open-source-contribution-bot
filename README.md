@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-10-31 21:11:27 UTC`
+- **Last Cloud Execution:** `2026-11-01 00:47:42 UTC`
 - **Active Monitored Pull Requests:** `6`
 - **Total Successfully Merged:** `1`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -29,6 +29,83 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `aeon-toolkit/aeon` | [#3932](https://github.com/aeon-toolkit/aeon/pull/3932) | [MNT] Parametrise test_warping over ALIGNMENT_PATH | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `docling-project/docling` | [#4951](https://github.com/docling-project/docling/pull/4951) | fix(docx): preserve nested list hierarchy across empty spacer paragraphs | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `Rekin226/aquascope` | [#653](https://github.com/Rekin226/aquascope/pull/653) | fix(registry): update south_africa_dws attribution | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
+
+### 🤖 Gemini AI Review Advisories
+
+#### `docling-project/docling#4951`: fix(docx): preserve nested list hierarchy across empty spacer paragraphs
+
+```markdown
+### 1. Core Request
+The maintainer needs a regression test fixture added to verify this edge case against ground truth files. They want you to append the nested list with an empty spacer paragraph (from issue #4947) to `tests/data/docx/sources/docx_lists.docx` and regenerate/update the corresponding ground truth outputs.
+
+---
+
+### 2. Minimal Modification Required
+
+1. **Update the DOCX fixture:**
+   Open `tests/data/docx/sources/docx_lists.docx`, append a page break at the end, and insert the minimal reproduction:
+   ```text
+   * Item 1
+     * Nested item 1.1
+
+     * Nested item 1.2 (after empty paragraph)
+   * Item 2
+   ```
+   *(Alternatively, copy the exact contents from `nested-list-empty-paragraph.docx` attached to issue #4947).*
+
+2. **Regenerate ground truth files:**
+   Run the test suite to update the ground-truth snapshots (usually markdown/JSON representations in `tests/data/docx/groundtruth/`):
+   ```bash
+   # Run the docx ground truth generator or pytest with update flags if configured:
+   poetry run pytest tests/test_docx.py
+   ```
+   *If the project uses an environment variable for updating ground truths, run:*
+   ```bash
+   DOCLING_GENERATE_GROUNDTRUTH=1 poetry run pytest tests/test_docx.py
+   ```
+
+3. **Commit both files:**
+   ```bash
+   git add tests/data/docx/sources/docx_lists.docx tests/data/docx/groundtruth/
+   git commit -m "test(docx): add fixture and ground truth for nested lists with spacer paragraphs"
+   ```
+
+---
+
+### 3. Developer Reply Draft
+> Added the spacer paragraph test case to `docx_lists.docx` after a page break
+```
+
+#### `Rekin226/aquascope#653`: fix(registry): update south_africa_dws attribution
+
+```markdown
+### 1. Core Issue
+The maintainer is geo-blocked (403) and cannot verify the DWS attribution terms via existing web archives. They need the exact URL (preferably an archive.org link) and the verbatim text to confirm the `attribution` field conforms to rule #473, validate the CHANGELOG description, and check for reuse restrictions (such as non-commercial clauses) relevant to #207.
+
+### 2. Minimal Code / Registry Modification
+Update the `south_africa_dws` registry definition (and CHANGELOG) so the `attribution` string exactly mirrors the upstream notice:
+
+```diff
+# registry entry for south_africa_dws
+- attribution: "South Africa Department of Water and Sanitation citation required"
++ attribution: "<exact verbatim text from the DWS terms page>"
+```
+
+```diff
+# CHANGELOG.md
+- - Updated south_africa_dws citation requirement.
++ - Updated south_africa_dws attribution to match verbatim upstream notice.
+```
+
+*(Ensure any test asserting registry metadata passes against the new string).*
+
+### 3. Developer Reply Draft
+Here is the archived link: `https://web.archive.org/web/<timestamp>/<exact-url>`, which states:
+> "[Paste verbatim notice here]"
+
+I've updated `attribution` in the registry to match this wording verbatim and aligned the CHANGELOG entry. The terms do not specify non-commercial restrictions, so `license` remains unset per #207.
+```
+
 
 ---
 

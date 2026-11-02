@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-02 01:21:18 UTC`
+- **Last Cloud Execution:** `2026-11-02 09:00:58 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `2`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -50,7 +50,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
-| `Rekin226/aquascope` | [#207](https://github.com/Rekin226/aquascope/issues/207) | Registry: verify data licences for the nine sources still marked unknown (gates the Archive mirroring) | `documentation` `help wanted` `good first issue` |
+| `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#381](https://github.com/Rekin226/aquascope/issues/381) | A defensible refusal scores the same as a wrong plan, and it is deciding the leaderboard | `enhancement` `help wanted` `testing` |
 | `NVIDIA-NeMo/Automodel` | [#533](https://github.com/NVIDIA-NeMo/Automodel/issues/533) | Make StatefulDataloader be DP-aware | `enhancement` `good first issue` |
 | `NVIDIA-NeMo/Automodel` | [#2462](https://github.com/NVIDIA-NeMo/Automodel/issues/2462) | Support MiMo-V2.5-Pro | `enhancement` `good first issue` |

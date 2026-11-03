@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-02 20:02:43 UTC`
+- **Last Cloud Execution:** `2026-11-03 03:21:45 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `2`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -51,9 +51,9 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
-| `Rekin226/aquascope` | [#381](https://github.com/Rekin226/aquascope/issues/381) | A defensible refusal scores the same as a wrong plan, and it is deciding the leaderboard | `enhancement` `help wanted` `testing` |
-| `NVIDIA-NeMo/Automodel` | [#533](https://github.com/NVIDIA-NeMo/Automodel/issues/533) | Make StatefulDataloader be DP-aware | `enhancement` `good first issue` |
-| `NVIDIA-NeMo/Automodel` | [#2462](https://github.com/NVIDIA-NeMo/Automodel/issues/2462) | Support MiMo-V2.5-Pro | `enhancement` `good first issue` |
+| `Rekin226/aquascope` | [#176](https://github.com/Rekin226/aquascope/issues/176) | taiwan_civil_iot: SensorThings endpoint times out from Taiwan too — service moved or down, and TLS verification is disabled in the collector | `help wanted` `good second issue` |
+| `NVIDIA-NeMo/Automodel` | [#4610](https://github.com/NVIDIA-NeMo/Automodel/issues/4610) | Add sound type annotations: distributed execution and cuda graphs | `good first issue` `help wanted` `PoR` |
+| `NVIDIA-NeMo/Automodel` | [#4614](https://github.com/NVIDIA-NeMo/Automodel/issues/4614) | Add sound type annotations: data, evaluation, and objectives | `good first issue` `help wanted` `PoR` |
 | `docling-project/docling` | [#327](https://github.com/docling-project/docling/issues/327) | Standardized Access to Common Email and Calendar Formats | `enhancement` `help wanted` `icebox` |
 | `FlexMeasures/flexmeasures` | [#1216](https://github.com/FlexMeasures/flexmeasures/issues/1216) | Add filter by asset type in the asset UI page | `good first issue` `UI` |
 | `FlexMeasures/flexmeasures` | [#1954](https://github.com/FlexMeasures/flexmeasures/issues/1954) | KPI Averaging Ignores Missing Days (UI/UX Issue) | `bug` `good first issue` |

@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-03 11:43:46 UTC`
+- **Last Cloud Execution:** `2026-11-03 19:14:42 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `2`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `8`
+- **Uncontested Issues Scouted:** `10`
 
 ---
 
@@ -51,6 +51,8 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
+| `Rekin226/aquascope` | [#441](https://github.com/Rekin226/aquascope/issues/441) | Reference reports wanted: nine of the twelve recorded studies have none, and score_report needs them | `help wanted` `good first issue` `methodology` |
+| `Rekin226/aquascope` | [#375](https://github.com/Rekin226/aquascope/issues/375) | assess_site judges records by length alone: give SiteContext a quality half | `enhancement` `help wanted` `good second issue` |
 | `Rekin226/aquascope` | [#176](https://github.com/Rekin226/aquascope/issues/176) | taiwan_civil_iot: SensorThings endpoint times out from Taiwan too — service moved or down, and TLS verification is disabled in the collector | `help wanted` `good second issue` |
 | `NVIDIA-NeMo/Automodel` | [#4610](https://github.com/NVIDIA-NeMo/Automodel/issues/4610) | Add sound type annotations: distributed execution and cuda graphs | `good first issue` `help wanted` `PoR` |
 | `NVIDIA-NeMo/Automodel` | [#4614](https://github.com/NVIDIA-NeMo/Automodel/issues/4614) | Add sound type annotations: data, evaluation, and objectives | `good first issue` `help wanted` `PoR` |

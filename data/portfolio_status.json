@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-04T08:46:04.807032+00:00"
+    "timestamp": "2026-11-04T17:49:56.585638+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-04T08:46:04.807097+00:00"
+    "timestamp": "2026-11-04T17:49:56.585734+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -27,7 +27,7 @@
     "review": "None",
     "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-11-04T08:46:04.807143+00:00"
+    "timestamp": "2026-11-04T17:49:56.585788+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-04T08:46:04.807184+00:00"
+    "timestamp": "2026-11-04T17:49:56.585838+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-04T08:46:04.807225+00:00"
+    "timestamp": "2026-11-04T17:49:56.585874+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -56,8 +56,8 @@
     "state": "OPEN",
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": "### 1. Core Request\nThe maintainer wants a regression test added to the test suite using a real `.docx` document. Specifically, append the edge-case from issue #4947 (nested lists separated by empty spacer paragraphs) to `tests/data/docx/sources/docx_lists.docx` and update the corresponding ground-truth reference files.\n\n---\n\n### 2. Required Modifications\n\n1. **Update test document:**\n   * Open `tests/data/docx/sources/docx_lists.docx`.\n   * Insert a page break at the end.\n   * Copy the nested list with the empty spacer paragraph from `nested-list-empty-paragraph.docx` (attached in #4947) into the document.\n   * Save the file.\n\n2. **Update ground truth:**\n   * Run the test suite or docling's ground truth update script (typically via pytest flag or regeneration script):\n     ```bash\n     pytest tests/test_docx.py -k \"docx_lists\"\n     ```\n   * Inspect and commit the updated ground truth files (e.g., in `tests/data/docx/groundtruth/docx_lists.md` or equivalent format files) confirming the hierarchy remains intact across the empty paragraph.\n\n---\n\n### 3. Developer Reply Draft\nAdded the empty spacer paragraph example from #4947 to the end of `docx_lists.docx` after a page break and regenerated the ground truth files. All tests pass locally.",
-    "timestamp": "2026-11-04T08:46:04.807263+00:00"
+    "ai_analysis": null,
+    "timestamp": "2026-11-04T17:49:56.585906+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
@@ -67,6 +67,6 @@
     "review": "None",
     "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-11-04T08:46:04.807299+00:00"
+    "timestamp": "2026-11-04T17:49:56.585938+00:00"
   }
 ]

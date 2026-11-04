@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-04 00:28:29 UTC`
+- **Last Cloud Execution:** `2026-11-04 08:46:14 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `2`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `10`
+- **Uncontested Issues Scouted:** `7`
 
 ---
 
@@ -29,6 +29,38 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `aeon-toolkit/aeon` | [#3932](https://github.com/aeon-toolkit/aeon/pull/3932) | [MNT] Parametrise test_warping over ALIGNMENT_PATH | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `docling-project/docling` | [#4951](https://github.com/docling-project/docling/pull/4951) | fix(docx): preserve nested list hierarchy across empty spacer paragraphs | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `Rekin226/aquascope` | [#653](https://github.com/Rekin226/aquascope/pull/653) | fix(registry): update south_africa_dws attribution | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
+
+### 🤖 Gemini AI Review Advisories
+
+#### `docling-project/docling#4951`: fix(docx): preserve nested list hierarchy across empty spacer paragraphs
+
+```markdown
+### 1. Core Request
+The maintainer wants a regression test added to the test suite using a real `.docx` document. Specifically, append the edge-case from issue #4947 (nested lists separated by empty spacer paragraphs) to `tests/data/docx/sources/docx_lists.docx` and update the corresponding ground-truth reference files.
+
+---
+
+### 2. Required Modifications
+
+1. **Update test document:**
+   * Open `tests/data/docx/sources/docx_lists.docx`.
+   * Insert a page break at the end.
+   * Copy the nested list with the empty spacer paragraph from `nested-list-empty-paragraph.docx` (attached in #4947) into the document.
+   * Save the file.
+
+2. **Update ground truth:**
+   * Run the test suite or docling's ground truth update script (typically via pytest flag or regeneration script):
+     ```bash
+     pytest tests/test_docx.py -k "docx_lists"
+     ```
+   * Inspect and commit the updated ground truth files (e.g., in `tests/data/docx/groundtruth/docx_lists.md` or equivalent format files) confirming the hierarchy remains intact across the empty paragraph.
+
+---
+
+### 3. Developer Reply Draft
+Added the empty spacer paragraph example from #4947 to the end of `docx_lists.docx` after a page break and regenerated the ground truth files. All tests pass locally.
+```
+
 
 ---
 
@@ -50,10 +82,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
-| `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
-| `Rekin226/aquascope` | [#441](https://github.com/Rekin226/aquascope/issues/441) | Reference reports wanted: nine of the twelve recorded studies have none, and score_report needs them | `help wanted` `good first issue` `methodology` |
 | `Rekin226/aquascope` | [#375](https://github.com/Rekin226/aquascope/issues/375) | assess_site judges records by length alone: give SiteContext a quality half | `enhancement` `help wanted` `good second issue` |
-| `Rekin226/aquascope` | [#176](https://github.com/Rekin226/aquascope/issues/176) | taiwan_civil_iot: SensorThings endpoint times out from Taiwan too — service moved or down, and TLS verification is disabled in the collector | `help wanted` `good second issue` |
 | `NVIDIA-NeMo/Automodel` | [#4610](https://github.com/NVIDIA-NeMo/Automodel/issues/4610) | Add sound type annotations: distributed execution and cuda graphs | `good first issue` `help wanted` `PoR` |
 | `NVIDIA-NeMo/Automodel` | [#4614](https://github.com/NVIDIA-NeMo/Automodel/issues/4614) | Add sound type annotations: data, evaluation, and objectives | `good first issue` `help wanted` `PoR` |
 | `docling-project/docling` | [#327](https://github.com/docling-project/docling/issues/327) | Standardized Access to Common Email and Calendar Formats | `enhancement` `help wanted` `icebox` |

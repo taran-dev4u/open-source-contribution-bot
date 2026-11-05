@@ -10,8 +10,8 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-05 16:29:31 UTC`
-- **Active Monitored Pull Requests:** `6`
+- **Last Cloud Execution:** `2026-11-05 21:49:59 UTC`
+- **Active Monitored Pull Requests:** `7`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
 - **Uncontested Issues Scouted:** `3`
@@ -28,6 +28,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `aeon-toolkit/aeon` | [#3932](https://github.com/aeon-toolkit/aeon/pull/3932) | [MNT] Parametrise test_warping over ALIGNMENT_PATH | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `docling-project/docling` | [#4951](https://github.com/docling-project/docling/pull/4951) | fix(docx): preserve nested list hierarchy across empty spacer paragraphs | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
+| `Rekin226/aquascope` | [#722](https://github.com/Rekin226/aquascope/pull/722) | fix(taiwan_wra_level): quote OGDL exhibit notice in registry attribution (#473) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 
 ---
 

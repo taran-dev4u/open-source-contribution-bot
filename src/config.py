@@ -62,8 +62,8 @@ class BotConfig:
             MonitoredPR(
                 upstream_repo="NVIDIA-NeMo/Automodel",
                 fork_repo="taran-dev4u/Automodel",
-                pr_number=4154,
-                head_branch="docs/embedding-biencoder-tutorial",
+                pr_number=4656,
+                head_branch="types/training-garbage-collection",
                 default_branch="main",
             ),
             MonitoredPR(

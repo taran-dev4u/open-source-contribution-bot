@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-06 02:02:43 UTC`
+- **Last Cloud Execution:** `2026-11-06 11:55:37 UTC`
 - **Active Monitored Pull Requests:** `7`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `3`
+- **Uncontested Issues Scouted:** `6`
 
 ---
 
@@ -50,7 +50,10 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
-| `Rekin226/aquascope` | [#375](https://github.com/Rekin226/aquascope/issues/375) | assess_site judges records by length alone: give SiteContext a quality half | `enhancement` `help wanted` `good second issue` |
+| `Rekin226/aquascope` | [#441](https://github.com/Rekin226/aquascope/issues/441) | Reference reports wanted: nine of the twelve recorded studies have none, and score_report needs them | `help wanted` `good first issue` `methodology` |
+| `Rekin226/aquascope` | [#168](https://github.com/Rekin226/aquascope/issues/168) | japan_mlit collector broken: www1.river.go.jp water-level CGI returns 404, and the failure is silent | `help wanted` |
+| `Rekin226/aquascope` | [#166](https://github.com/Rekin226/aquascope/issues/166) | CI: weekly live-fetch health check across all 27 collectors | `help wanted` `testing` |
+| `Rekin226/aquascope` | [#167](https://github.com/Rekin226/aquascope/issues/167) | aquastat collector broken: FAO retired the FAOSTAT AQUASTAT endpoint (404) | `help wanted` |
 | `FlexMeasures/flexmeasures` | [#1216](https://github.com/FlexMeasures/flexmeasures/issues/1216) | Add filter by asset type in the asset UI page | `good first issue` `UI` |
 | `FlexMeasures/flexmeasures` | [#601](https://github.com/FlexMeasures/flexmeasures/issues/601) | Support TimescaleDB | `help wanted` `Data` |
 

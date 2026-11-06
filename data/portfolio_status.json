@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-06T11:55:29.323056+00:00"
+    "timestamp": "2026-11-06T19:02:37.559909+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-06T11:55:29.323123+00:00"
+    "timestamp": "2026-11-06T19:02:37.559952+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -27,7 +27,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-06T11:55:29.323165+00:00"
+    "timestamp": "2026-11-06T19:02:37.559973+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-06T11:55:29.323202+00:00"
+    "timestamp": "2026-11-06T19:02:37.559991+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-06T11:55:29.323238+00:00"
+    "timestamp": "2026-11-06T19:02:37.560008+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -57,16 +57,16 @@
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-06T11:55:29.323291+00:00"
+    "timestamp": "2026-11-06T19:02:37.560025+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
     "pr": 722,
     "title": "fix(taiwan_wra_level): quote OGDL exhibit notice in registry attribution (#473)",
     "state": "OPEN",
-    "review": "None",
+    "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-06T11:55:29.323357+00:00"
+    "timestamp": "2026-11-06T19:02:37.560041+00:00"
   }
 ]

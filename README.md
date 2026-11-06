@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-06 11:55:37 UTC`
+- **Last Cloud Execution:** `2026-11-06 19:02:46 UTC`
 - **Active Monitored Pull Requests:** `7`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `6`
+- **Uncontested Issues Scouted:** `7`
 
 ---
 
@@ -28,7 +28,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `aeon-toolkit/aeon` | [#3932](https://github.com/aeon-toolkit/aeon/pull/3932) | [MNT] Parametrise test_warping over ALIGNMENT_PATH | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `docling-project/docling` | [#4951](https://github.com/docling-project/docling/pull/4951) | fix(docx): preserve nested list hierarchy across empty spacer paragraphs | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
-| `Rekin226/aquascope` | [#722](https://github.com/Rekin226/aquascope/pull/722) | fix(taiwan_wra_level): quote OGDL exhibit notice in registry attribution (#473) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+| `Rekin226/aquascope` | [#722](https://github.com/Rekin226/aquascope/pull/722) | fix(taiwan_wra_level): quote OGDL exhibit notice in registry attribution (#473) | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 
 ---
 
@@ -51,6 +51,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
 | `Rekin226/aquascope` | [#441](https://github.com/Rekin226/aquascope/issues/441) | Reference reports wanted: nine of the twelve recorded studies have none, and score_report needs them | `help wanted` `good first issue` `methodology` |
+| `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#168](https://github.com/Rekin226/aquascope/issues/168) | japan_mlit collector broken: www1.river.go.jp water-level CGI returns 404, and the failure is silent | `help wanted` |
 | `Rekin226/aquascope` | [#166](https://github.com/Rekin226/aquascope/issues/166) | CI: weekly live-fetch health check across all 27 collectors | `help wanted` `testing` |
 | `Rekin226/aquascope` | [#167](https://github.com/Rekin226/aquascope/issues/167) | aquastat collector broken: FAO retired the FAOSTAT AQUASTAT endpoint (404) | `help wanted` |

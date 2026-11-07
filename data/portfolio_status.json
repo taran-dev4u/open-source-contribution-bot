@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-07T18:30:38.562030+00:00"
+    "timestamp": "2026-11-07T23:30:02.606608+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,17 +17,17 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-07T18:30:38.562087+00:00"
+    "timestamp": "2026-11-07T23:30:02.606667+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
     "pr": 4656,
-    "title": "refactor(training): annotate GarbageCollection and add unit tests",
+    "title": "refactor(training): type training components and unit tests (#4626)",
     "state": "OPEN",
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-07T18:30:38.562132+00:00"
+    "timestamp": "2026-11-07T23:30:02.606695+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-07T18:30:38.562180+00:00"
+    "timestamp": "2026-11-07T23:30:02.606719+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-07T18:30:38.562200+00:00"
+    "timestamp": "2026-11-07T23:30:02.606743+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -57,7 +57,7 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-07T18:30:38.562220+00:00"
+    "timestamp": "2026-11-07T23:30:02.606767+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
@@ -67,6 +67,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-07T18:30:38.562241+00:00"
+    "timestamp": "2026-11-07T23:30:02.606785+00:00"
   }
 ]

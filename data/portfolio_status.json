@@ -1,5 +1,15 @@
 [
   {
+    "repo": "Rekin226/aquascope",
+    "pr": 729,
+    "title": "fix(taiwan_wra_groundwater): quote OGDL exhibit notice in registry attribution (#473)",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "ai_analysis": null,
+    "timestamp": "2026-11-08T12:56:20.805588+00:00"
+  },
+  {
     "repo": "FlexMeasures/flexmeasures",
     "pr": 2448,
     "title": "feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416)",
@@ -7,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T05:03:24.427317+00:00"
+    "timestamp": "2026-11-08T12:56:20.805653+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +27,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T05:03:24.427392+00:00"
+    "timestamp": "2026-11-08T12:56:20.805689+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -27,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T05:03:24.427443+00:00"
+    "timestamp": "2026-11-08T12:56:20.805718+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T05:03:24.427487+00:00"
+    "timestamp": "2026-11-08T12:56:20.805747+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -47,7 +57,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T05:03:24.427531+00:00"
+    "timestamp": "2026-11-08T12:56:20.805774+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -57,16 +67,6 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T05:03:24.427574+00:00"
-  },
-  {
-    "repo": "Rekin226/aquascope",
-    "pr": 728,
-    "title": "fix(taiwan_wra_reservoir): quote OGDL exhibit notice in registry attribution (#473)",
-    "state": "OPEN",
-    "review": "None",
-    "fork_synced": false,
-    "ai_analysis": null,
-    "timestamp": "2026-11-08T05:03:24.427617+00:00"
+    "timestamp": "2026-11-08T12:56:20.805800+00:00"
   }
 ]

@@ -46,6 +46,13 @@ class BotConfig:
     monitored_prs: list[MonitoredPR] = field(
         default_factory=lambda: [
             MonitoredPR(
+                upstream_repo="Rekin226/aquascope",
+                fork_repo="taran-dev4u/aquascope",
+                pr_number=729,
+                head_branch="fix/taiwan-wra-groundwater-attribution-473",
+                default_branch="main",
+            ),
+            MonitoredPR(
                 upstream_repo="FlexMeasures/flexmeasures",
                 fork_repo="taran-dev4u/flexmeasures",
                 pr_number=2448,

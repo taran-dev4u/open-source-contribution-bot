@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T12:56:20.805588+00:00"
+    "timestamp": "2026-11-08T18:42:26.937405+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T12:56:20.805653+00:00"
+    "timestamp": "2026-11-08T18:42:26.937469+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -27,7 +27,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T12:56:20.805689+00:00"
+    "timestamp": "2026-11-08T18:42:26.937513+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T12:56:20.805718+00:00"
+    "timestamp": "2026-11-08T18:42:26.937547+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -47,17 +47,17 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T12:56:20.805747+00:00"
+    "timestamp": "2026-11-08T18:42:26.937598+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
     "pr": 3932,
     "title": "[MNT] Parametrise test_warping over ALIGNMENT_PATH",
-    "state": "OPEN",
+    "state": "MERGED",
     "review": "None",
-    "fork_synced": false,
+    "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T12:56:20.805774+00:00"
+    "timestamp": "2026-11-08T18:42:26.937626+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -67,6 +67,6 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T12:56:20.805800+00:00"
+    "timestamp": "2026-11-08T18:42:26.937652+00:00"
   }
 ]

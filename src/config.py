@@ -87,6 +87,13 @@ class BotConfig:
                 head_branch="fix/docx-nested-list-empty-paragraphs",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="aeon-toolkit/aeon",
+                fork_repo="taran-dev4u/aeon",
+                pr_number=4000,
+                head_branch="fix/stl-extrapolation-lowpass-3994",
+                default_branch="main",
+            ),
         ]
     )
 

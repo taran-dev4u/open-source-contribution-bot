@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-08 23:29:00 UTC`
+- **Last Cloud Execution:** `2026-11-09 05:14:42 UTC`
 - **Active Monitored Pull Requests:** `6`
 - **Total Successfully Merged:** `1`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `7`
+- **Uncontested Issues Scouted:** `6`
 
 ---
 
@@ -22,7 +22,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | PR | Title | State | Review | Fork Sync |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `Rekin226/aquascope` | [#729](https://github.com/Rekin226/aquascope/pull/729) | fix(taiwan_wra_groundwater): quote OGDL exhibit notice in registry attribution (#473) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+| `Rekin226/aquascope` | [#729](https://github.com/Rekin226/aquascope/pull/729) | fix(taiwan_wra_groundwater): quote OGDL exhibit notice in registry attribution (#473) | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `FlexMeasures/flexmeasures` | [#2448](https://github.com/FlexMeasures/flexmeasures/pull/2448) | feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `NVIDIA-NeMo/Automodel` | [#4656](https://github.com/NVIDIA-NeMo/Automodel/pull/4656) | refactor(training): type training components and unit tests (#4626) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
@@ -54,7 +54,6 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `Rekin226/aquascope` | [#441](https://github.com/Rekin226/aquascope/issues/441) | Reference reports wanted: nine of the twelve recorded studies have none, and score_report needs them | `help wanted` `good first issue` `methodology` |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#176](https://github.com/Rekin226/aquascope/issues/176) | taiwan_civil_iot: SensorThings endpoint times out from Taiwan too — service moved or down, and TLS verification is disabled in the collector | `help wanted` `good second issue` |
-| `Rekin226/aquascope` | [#445](https://github.com/Rekin226/aquascope/issues/445) | [Epic] A QGIS plugin in the official repository: the Archive where hydrologists already look | `enhancement` `help wanted` `visualization` |
 | `FlexMeasures/flexmeasures` | [#1216](https://github.com/FlexMeasures/flexmeasures/issues/1216) | Add filter by asset type in the asset UI page | `good first issue` `UI` |
 | `FlexMeasures/flexmeasures` | [#601](https://github.com/FlexMeasures/flexmeasures/issues/601) | Support TimescaleDB | `help wanted` `Data` |
 

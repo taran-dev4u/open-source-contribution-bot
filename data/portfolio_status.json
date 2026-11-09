@@ -4,10 +4,10 @@
     "pr": 729,
     "title": "fix(taiwan_wra_groundwater): quote OGDL exhibit notice in registry attribution (#473)",
     "state": "OPEN",
-    "review": "None",
+    "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T23:28:53.311611+00:00"
+    "timestamp": "2026-11-09T05:14:34.520028+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T23:28:53.311682+00:00"
+    "timestamp": "2026-11-09T05:14:34.520107+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -27,7 +27,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T23:28:53.311727+00:00"
+    "timestamp": "2026-11-09T05:14:34.520159+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -37,7 +37,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T23:28:53.311771+00:00"
+    "timestamp": "2026-11-09T05:14:34.520205+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -47,7 +47,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T23:28:53.311814+00:00"
+    "timestamp": "2026-11-09T05:14:34.520249+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -57,7 +57,7 @@
     "review": "None",
     "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T23:28:53.311853+00:00"
+    "timestamp": "2026-11-09T05:14:34.520295+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -67,6 +67,6 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-08T23:28:53.311891+00:00"
+    "timestamp": "2026-11-09T05:14:34.520339+00:00"
   }
 ]

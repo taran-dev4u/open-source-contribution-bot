@@ -81,13 +81,6 @@ class BotConfig:
                 default_branch="main",
             ),
             MonitoredPR(
-                upstream_repo="aeon-toolkit/aeon",
-                fork_repo="taran-dev4u/aeon",
-                pr_number=3932,
-                head_branch="mnt/warping-alignment-path-distances",
-                default_branch="main",
-            ),
-            MonitoredPR(
                 upstream_repo="docling-project/docling",
                 fork_repo="taran-dev4u/docling",
                 pr_number=4951,

@@ -1,15 +1,5 @@
 [
   {
-    "repo": "Rekin226/aquascope",
-    "pr": 729,
-    "title": "fix(taiwan_wra_groundwater): quote OGDL exhibit notice in registry attribution (#473)",
-    "state": "OPEN",
-    "review": "CHANGES_REQUESTED",
-    "fork_synced": false,
-    "ai_analysis": null,
-    "timestamp": "2026-11-10T07:05:03.291070+00:00"
-  },
-  {
     "repo": "FlexMeasures/flexmeasures",
     "pr": 2448,
     "title": "feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416)",
@@ -17,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-10T07:05:03.291117+00:00"
+    "timestamp": "2026-11-10T16:13:36.778549+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -27,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-10T07:05:03.291138+00:00"
+    "timestamp": "2026-11-10T16:13:36.778594+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,7 +27,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-10T07:05:03.291159+00:00"
+    "timestamp": "2026-11-10T16:13:36.778614+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -47,7 +37,7 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-10T07:05:03.291177+00:00"
+    "timestamp": "2026-11-10T16:13:36.778632+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -57,6 +47,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-10T07:05:03.291192+00:00"
+    "timestamp": "2026-11-10T16:13:36.778648+00:00"
   }
 ]

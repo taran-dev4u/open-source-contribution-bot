@@ -10,9 +10,9 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-10 00:00:08 UTC`
+- **Last Cloud Execution:** `2026-11-10 07:05:12 UTC`
 - **Active Monitored Pull Requests:** `6`
-- **Total Successfully Merged:** `1`
+- **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
 - **Uncontested Issues Scouted:** `5`
 
@@ -25,7 +25,6 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `Rekin226/aquascope` | [#729](https://github.com/Rekin226/aquascope/pull/729) | fix(taiwan_wra_groundwater): quote OGDL exhibit notice in registry attribution (#473) | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `FlexMeasures/flexmeasures` | [#2448](https://github.com/FlexMeasures/flexmeasures/pull/2448) | feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `NVIDIA-NeMo/Automodel` | [#4656](https://github.com/NVIDIA-NeMo/Automodel/pull/4656) | refactor(training): type training components and unit tests (#4626) | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
 | `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 | `docling-project/docling` | [#4951](https://github.com/docling-project/docling/pull/4951) | fix(docx): preserve nested list hierarchy across empty spacer paragraphs | 🟢 `OPEN` | ✅ `APPROVED` | — |
 | `aeon-toolkit/aeon` | [#4000](https://github.com/aeon-toolkit/aeon/pull/4000) | [BUG] Extrapolate cycle subseries and apply low-pass LOESS in STL | 🟢 `OPEN` | ⚪ `AWAITING` | — |

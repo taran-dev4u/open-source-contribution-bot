@@ -3,11 +3,11 @@
     "repo": "FlexMeasures/flexmeasures",
     "pr": 2448,
     "title": "feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416)",
-    "state": "OPEN",
+    "state": "MERGED",
     "review": "None",
-    "fork_synced": false,
+    "fork_synced": true,
     "ai_analysis": null,
-    "timestamp": "2026-11-11T05:14:33.943997+00:00"
+    "timestamp": "2026-11-11T13:45:57.424555+00:00"
   },
   {
     "repo": "FlexMeasures/flexmeasures",
@@ -17,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-11T05:14:33.944103+00:00"
+    "timestamp": "2026-11-11T13:45:57.424661+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -27,7 +27,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-11T05:14:33.944157+00:00"
+    "timestamp": "2026-11-11T13:45:57.424712+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -37,7 +37,7 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-11T05:14:33.944206+00:00"
+    "timestamp": "2026-11-11T13:45:57.424754+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -47,6 +47,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-11T05:14:33.944251+00:00"
+    "timestamp": "2026-11-11T13:45:57.424795+00:00"
   }
 ]

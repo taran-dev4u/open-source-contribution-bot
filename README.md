@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-10 22:57:33 UTC`
+- **Last Cloud Execution:** `2026-11-11 05:14:42 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `4`
+- **Uncontested Issues Scouted:** `5`
 
 ---
 
@@ -48,7 +48,8 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
-| `Rekin226/aquascope` | [#207](https://github.com/Rekin226/aquascope/issues/207) | Registry: verify data licences for the nine sources still marked unknown (gates the Archive mirroring) | `documentation` `help wanted` `good first issue` |
+| `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
+| `Rekin226/aquascope` | [#442](https://github.com/Rekin226/aquascope/issues/442) | Reference plans wanted: bring a basin you know, especially outside the US, UK and France | `help wanted` `good first issue` `methodology` |
 | `Rekin226/aquascope` | [#176](https://github.com/Rekin226/aquascope/issues/176) | taiwan_civil_iot: SensorThings endpoint times out from Taiwan too — service moved or down, and TLS verification is disabled in the collector | `help wanted` `good second issue` |
 | `FlexMeasures/flexmeasures` | [#1216](https://github.com/FlexMeasures/flexmeasures/issues/1216) | Add filter by asset type in the asset UI page | `good first issue` `UI` |
 | `FlexMeasures/flexmeasures` | [#601](https://github.com/FlexMeasures/flexmeasures/issues/601) | Support TimescaleDB | `help wanted` `Data` |

@@ -1,23 +1,13 @@
 [
   {
     "repo": "FlexMeasures/flexmeasures",
-    "pr": 2448,
-    "title": "feat(planning): export commodity_costs in StorageScheduler outputs and persist in job meta (#2416)",
-    "state": "MERGED",
-    "review": "None",
-    "fork_synced": true,
-    "ai_analysis": null,
-    "timestamp": "2026-11-12T02:44:36.048531+00:00"
-  },
-  {
-    "repo": "FlexMeasures/flexmeasures",
     "pr": 2484,
     "title": "fix(app): avoid reconfiguring root logging in test runs to preserve caplog",
     "state": "OPEN",
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-12T02:44:36.048594+00:00"
+    "timestamp": "2026-11-12T12:19:31.301011+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -27,7 +17,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-12T02:44:36.048625+00:00"
+    "timestamp": "2026-11-12T12:19:31.301082+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -37,7 +27,7 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-12T02:44:36.048651+00:00"
+    "timestamp": "2026-11-12T12:19:31.301140+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -47,6 +37,16 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-12T02:44:36.048676+00:00"
+    "timestamp": "2026-11-12T12:19:31.301178+00:00"
+  },
+  {
+    "repo": "NVIDIA-NeMo/Automodel",
+    "pr": 4737,
+    "title": "refactor(peft): type LoRA expert adapter state and initialization contracts",
+    "state": "OPEN",
+    "review": "None",
+    "fork_synced": false,
+    "ai_analysis": null,
+    "timestamp": "2026-11-12T12:19:31.301204+00:00"
   }
 ]

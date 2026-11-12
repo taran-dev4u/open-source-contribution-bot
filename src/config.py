@@ -73,6 +73,13 @@ class BotConfig:
                 head_branch="fix/stl-extrapolation-lowpass-3994",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="NVIDIA-NeMo/Automodel",
+                fork_repo="taran-dev4u/Automodel",
+                pr_number=4737,
+                head_branch="refactor/peft-lora-experts-types",
+                default_branch="main",
+            ),
         ]
     )
 

@@ -48,13 +48,6 @@ class BotConfig:
             MonitoredPR(
                 upstream_repo="FlexMeasures/flexmeasures",
                 fork_repo="taran-dev4u/flexmeasures",
-                pr_number=2448,
-                head_branch="feat/export-per-commodity-costs",
-                default_branch="main",
-            ),
-            MonitoredPR(
-                upstream_repo="FlexMeasures/flexmeasures",
-                fork_repo="taran-dev4u/flexmeasures",
                 pr_number=2484,
                 head_branch="fix/app-logging-config-preserve-caplog",
                 default_branch="main",

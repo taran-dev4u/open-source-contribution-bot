@@ -80,6 +80,13 @@ class BotConfig:
                 head_branch="refactor/peft-lora-experts-types",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="Rekin226/aquascope",
+                fork_repo="taran-dev4u/aquascope",
+                pr_number=757,
+                head_branch="fix/taiwan-wra-fhy-ogdl-attribution",
+                default_branch="main",
+            ),
         ]
     )
 

@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-16 05:26:41 UTC`
-- **Active Monitored Pull Requests:** `6`
-- **Total Successfully Merged:** `0`
+- **Last Cloud Execution:** `2026-11-16 15:09:59 UTC`
+- **Active Monitored Pull Requests:** `5`
+- **Total Successfully Merged:** `1`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `7`
+- **Uncontested Issues Scouted:** `8`
 
 ---
 
@@ -23,7 +23,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | Repository | PR | Title | State | Review | Fork Sync |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🟢 `OPEN` | `COMMENTED` | — |
+| `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
 | `docling-project/docling` | [#4951](https://github.com/docling-project/docling/pull/4951) | fix(docx): preserve nested list hierarchy across empty spacer paragraphs | 🟢 `OPEN` | ✅ `APPROVED` | — |
 | `aeon-toolkit/aeon` | [#4000](https://github.com/aeon-toolkit/aeon/pull/4000) | [BUG] Extrapolate cycle subseries and apply low-pass LOESS in STL | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `NVIDIA-NeMo/Automodel` | [#4737](https://github.com/NVIDIA-NeMo/Automodel/pull/4737) | refactor(peft): type LoRA expert adapter state and initialization contracts | 🟢 `OPEN` | `COMMENTED` | — |
@@ -50,6 +50,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
+| `Rekin226/aquascope` | [#771](https://github.com/Rekin226/aquascope/issues/771) | collector-health: bom station catalog failed in the weekly harvest | `help wanted` `collector-health` |
 | `Rekin226/aquascope` | [#55](https://github.com/Rekin226/aquascope/issues/55) | Plugin architecture: third-party collectors & methodologies via entry points | `enhancement` `help wanted` `major feature` |
 | `Rekin226/aquascope` | [#231](https://github.com/Rekin226/aquascope/issues/231) | [Epic] One app: the Explorer's shell, information architecture and UX pass (tabbed inspector, Ask drawer, URL state, search, mobile, export, cite) | `enhancement` `help wanted` `visualization` |
 | `NVIDIA-NeMo/Automodel` | [#4614](https://github.com/NVIDIA-NeMo/Automodel/issues/4614) | Add sound type annotations: data, evaluation, and objectives | `good first issue` `help wanted` `PoR` |

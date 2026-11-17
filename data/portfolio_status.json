@@ -7,17 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-17T10:21:36.510317+00:00"
-  },
-  {
-    "repo": "SeitaBV/timely-beliefs",
-    "pr": 258,
-    "title": "Enforce zero event resolution in resample_instantaneous_events",
-    "state": "MERGED",
-    "review": "None",
-    "fork_synced": true,
-    "ai_analysis": null,
-    "timestamp": "2026-11-17T10:21:36.510359+00:00"
+    "timestamp": "2026-11-17T20:36:32.506536+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -27,7 +17,7 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-17T10:21:36.510378+00:00"
+    "timestamp": "2026-11-17T20:36:32.506573+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -37,26 +27,26 @@
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-17T10:21:36.510396+00:00"
+    "timestamp": "2026-11-17T20:36:32.506590+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
     "pr": 4737,
     "title": "refactor(peft): type LoRA expert adapter state and initialization contracts",
     "state": "OPEN",
-    "review": "COMMENTED",
+    "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-17T10:21:36.510413+00:00"
+    "timestamp": "2026-11-17T20:36:32.506604+00:00"
   },
   {
     "repo": "Rekin226/aquascope",
     "pr": 762,
-    "title": "fix(taiwan_wra_iot): quote OGDL exhibit notice in registry attribution (#473)",
+    "title": "fix(taiwan_wra_iot): record the WRA IoT portal's own declaration (#473)",
     "state": "OPEN",
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-17T10:21:36.510428+00:00"
+    "timestamp": "2026-11-17T20:36:32.506621+00:00"
   }
 ]

@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-17 10:21:46 UTC`
+- **Last Cloud Execution:** `2026-11-17 20:36:42 UTC`
 - **Active Monitored Pull Requests:** `5`
-- **Total Successfully Merged:** `1`
+- **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `7`
+- **Uncontested Issues Scouted:** `8`
 
 ---
 
@@ -23,11 +23,10 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | Repository | PR | Title | State | Review | Fork Sync |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `FlexMeasures/flexmeasures` | [#2484](https://github.com/FlexMeasures/flexmeasures/pull/2484) | fix(app): avoid reconfiguring root logging in test runs to preserve caplog | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-| `SeitaBV/timely-beliefs` | [#258](https://github.com/SeitaBV/timely-beliefs/pull/258) | Enforce zero event resolution in resample_instantaneous_events | 🎉 `MERGED` | ⚪ `AWAITING` | ✅ Synced |
 | `docling-project/docling` | [#4951](https://github.com/docling-project/docling/pull/4951) | fix(docx): preserve nested list hierarchy across empty spacer paragraphs | 🟢 `OPEN` | ✅ `APPROVED` | — |
 | `aeon-toolkit/aeon` | [#4000](https://github.com/aeon-toolkit/aeon/pull/4000) | [BUG] Extrapolate cycle subseries and apply low-pass LOESS in STL | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
-| `NVIDIA-NeMo/Automodel` | [#4737](https://github.com/NVIDIA-NeMo/Automodel/pull/4737) | refactor(peft): type LoRA expert adapter state and initialization contracts | 🟢 `OPEN` | `COMMENTED` | — |
-| `Rekin226/aquascope` | [#762](https://github.com/Rekin226/aquascope/pull/762) | fix(taiwan_wra_iot): quote OGDL exhibit notice in registry attribution (#473) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+| `NVIDIA-NeMo/Automodel` | [#4737](https://github.com/NVIDIA-NeMo/Automodel/pull/4737) | refactor(peft): type LoRA expert adapter state and initialization contracts | 🟢 `OPEN` | ✅ `APPROVED` | — |
+| `Rekin226/aquascope` | [#762](https://github.com/Rekin226/aquascope/pull/762) | fix(taiwan_wra_iot): record the WRA IoT portal's own declaration (#473) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 
 ---
 
@@ -53,6 +52,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `Rekin226/aquascope` | [#771](https://github.com/Rekin226/aquascope/issues/771) | collector-health: bom station catalog failed in the weekly harvest | `help wanted` `collector-health` |
 | `Rekin226/aquascope` | [#55](https://github.com/Rekin226/aquascope/issues/55) | Plugin architecture: third-party collectors & methodologies via entry points | `enhancement` `help wanted` `major feature` |
 | `Rekin226/aquascope` | [#231](https://github.com/Rekin226/aquascope/issues/231) | [Epic] One app: the Explorer's shell, information architecture and UX pass (tabbed inspector, Ask drawer, URL state, search, mobile, export, cite) | `enhancement` `help wanted` `visualization` |
+| `NVIDIA-NeMo/Automodel` | [#4614](https://github.com/NVIDIA-NeMo/Automodel/issues/4614) | Add sound type annotations: data, evaluation, and objectives | `good first issue` `help wanted` `PoR` |
 | `NVIDIA-NeMo/Automodel` | [#4612](https://github.com/NVIDIA-NeMo/Automodel/issues/4612) | Add sound type annotations: configuration, launchers, and utilities | `good first issue` `help wanted` `PoR` |
 | `FlexMeasures/flexmeasures` | [#1216](https://github.com/FlexMeasures/flexmeasures/issues/1216) | Add filter by asset type in the asset UI page | `good first issue` `UI` |
 | `FlexMeasures/flexmeasures` | [#601](https://github.com/FlexMeasures/flexmeasures/issues/601) | Support TimescaleDB | `help wanted` `Data` |

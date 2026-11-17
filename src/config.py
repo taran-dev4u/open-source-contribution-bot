@@ -53,13 +53,6 @@ class BotConfig:
                 default_branch="main",
             ),
             MonitoredPR(
-                upstream_repo="SeitaBV/timely-beliefs",
-                fork_repo="taran-dev4u/timely-beliefs",
-                pr_number=258,
-                head_branch="fix/resample-instantaneous-resolution-guard",
-                default_branch="main",
-            ),
-            MonitoredPR(
                 upstream_repo="docling-project/docling",
                 fork_repo="taran-dev4u/docling",
                 pr_number=4951,

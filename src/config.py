@@ -73,6 +73,13 @@ class BotConfig:
                 head_branch="refactor/peft-lora-experts-types",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="SeitaBV/timely-beliefs",
+                fork_repo="taran-dev4u/timely-beliefs",
+                pr_number=266,
+                head_branch="fix/copy-interval-overflow-pg12",
+                default_branch="main",
+            ),
         ]
     )
 

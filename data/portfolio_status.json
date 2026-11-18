@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-17T20:36:32.506536+00:00"
+    "timestamp": "2026-11-18T03:23:50.957364+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -17,7 +17,7 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-17T20:36:32.506573+00:00"
+    "timestamp": "2026-11-18T03:23:50.957421+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -27,7 +27,7 @@
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-17T20:36:32.506590+00:00"
+    "timestamp": "2026-11-18T03:23:50.957449+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -37,16 +37,16 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-17T20:36:32.506604+00:00"
+    "timestamp": "2026-11-18T03:23:50.957474+00:00"
   },
   {
-    "repo": "Rekin226/aquascope",
-    "pr": 762,
-    "title": "fix(taiwan_wra_iot): record the WRA IoT portal's own declaration (#473)",
+    "repo": "SeitaBV/timely-beliefs",
+    "pr": 266,
+    "title": "Format intervals as days and time in COPY to prevent overflow on PostgreSQL 12 (#261)",
     "state": "OPEN",
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-17T20:36:32.506621+00:00"
+    "timestamp": "2026-11-18T03:23:50.957496+00:00"
   }
 ]

@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-17 20:36:42 UTC`
+- **Last Cloud Execution:** `2026-11-18 03:23:59 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -26,7 +26,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `docling-project/docling` | [#4951](https://github.com/docling-project/docling/pull/4951) | fix(docx): preserve nested list hierarchy across empty spacer paragraphs | 🟢 `OPEN` | ✅ `APPROVED` | — |
 | `aeon-toolkit/aeon` | [#4000](https://github.com/aeon-toolkit/aeon/pull/4000) | [BUG] Extrapolate cycle subseries and apply low-pass LOESS in STL | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `NVIDIA-NeMo/Automodel` | [#4737](https://github.com/NVIDIA-NeMo/Automodel/pull/4737) | refactor(peft): type LoRA expert adapter state and initialization contracts | 🟢 `OPEN` | ✅ `APPROVED` | — |
-| `Rekin226/aquascope` | [#762](https://github.com/Rekin226/aquascope/pull/762) | fix(taiwan_wra_iot): record the WRA IoT portal's own declaration (#473) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+| `SeitaBV/timely-beliefs` | [#266](https://github.com/SeitaBV/timely-beliefs/pull/266) | Format intervals as days and time in COPY to prevent overflow on PostgreSQL 12 (#261) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
 
 ---
 

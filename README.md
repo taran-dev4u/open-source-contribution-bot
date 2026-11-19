@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-19 02:58:13 UTC`
+- **Last Cloud Execution:** `2026-11-19 12:37:23 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `7`
+- **Uncontested Issues Scouted:** `8`
 
 ---
 
@@ -52,6 +52,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `Rekin226/aquascope` | [#787](https://github.com/Rekin226/aquascope/issues/787) | Studies that compute on the map: let the Studio run Flood it, Route it, reservoir and land use | `enhancement` `help wanted` `major feature` |
 | `Rekin226/aquascope` | [#771](https://github.com/Rekin226/aquascope/issues/771) | collector-health: bom station catalog failed in the weekly harvest | `help wanted` `collector-health` |
 | `Rekin226/aquascope` | [#55](https://github.com/Rekin226/aquascope/issues/55) | Plugin architecture: third-party collectors & methodologies via entry points | `enhancement` `help wanted` `major feature` |
+| `NVIDIA-NeMo/Automodel` | [#4614](https://github.com/NVIDIA-NeMo/Automodel/issues/4614) | Add sound type annotations: data, evaluation, and objectives | `good first issue` `help wanted` `PoR` |
 | `NVIDIA-NeMo/Automodel` | [#4612](https://github.com/NVIDIA-NeMo/Automodel/issues/4612) | Add sound type annotations: configuration, launchers, and utilities | `good first issue` `help wanted` `PoR` |
 | `FlexMeasures/flexmeasures` | [#1216](https://github.com/FlexMeasures/flexmeasures/issues/1216) | Add filter by asset type in the asset UI page | `good first issue` `UI` |
 | `FlexMeasures/flexmeasures` | [#601](https://github.com/FlexMeasures/flexmeasures/issues/601) | Support TimescaleDB | `help wanted` `Data` |

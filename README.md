@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-20 03:00:41 UTC`
+- **Last Cloud Execution:** `2026-11-20 12:37:00 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `8`
+- **Uncontested Issues Scouted:** `9`
 
 ---
 
@@ -27,51 +27,6 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `aeon-toolkit/aeon` | [#4000](https://github.com/aeon-toolkit/aeon/pull/4000) | [BUG] Extrapolate cycle subseries and apply low-pass LOESS in STL | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `NVIDIA-NeMo/Automodel` | [#4737](https://github.com/NVIDIA-NeMo/Automodel/pull/4737) | refactor(peft): type LoRA expert adapter state and initialization contracts | 🟢 `OPEN` | ✅ `APPROVED` | — |
 | `SeitaBV/timely-beliefs` | [#266](https://github.com/SeitaBV/timely-beliefs/pull/266) | Format intervals as days and time in COPY to prevent overflow on PostgreSQL 12 (#261) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
-
-### 🤖 Gemini AI Review Advisories
-
-#### `aeon-toolkit/aeon#4000`: [BUG] Extrapolate cycle subseries and apply low-pass LOESS in STL
-
-```markdown
-### 1. Core Request
-The maintainer requested fixing the skip message to satisfy CI soft-dependency linting, removing a redundant array allocation inside the Numba inner loop, and cleaning up test coverage by parameterizing low-pass arguments individually, reusing `_synthetic_series`, and tightening trend/seasonal assertions.
-
----
-
-### 2. Required Modifications
-
-#### `aeon/transformations/series/_stl.py`
-Pass `rw` directly instead of allocating `dummy_rw` when calling `_ess_nb` with `use_rw=False`:
-
-```python
-# In _seasonal_smoothing_nb around line 258:
-# Remove: dummy_rw = np.ones(n, dtype=np.float64)
-# Pass rw directly:
-_ess_nb(
-    x=trend_indices,
-    y=low_pass_filtered,
-    rw=rw,
-    span=low_pass,
-    deg=low_pass_deg,
-    jump=low_pass_jump,
-    use_rw=False,
-    out=trend_work,
-)
-```
-
-#### `aeon/transformations/series/tests/test_stl.py`
-
-```python
-import numpy as np
-import pytest
-from aeon.utils.validation._dependencies import _check_soft_dependencies
-
-
-# 1. Update skip condition reason
-@pytest.mark.skipif(
-    not _check_soft_dependencies("statsmodels", severity="none"),
-```
-
 
 ---
 
@@ -98,6 +53,7 @@ from aeon.utils.validation._dependencies import _check_soft_dependencies
 | `Rekin226/aquascope` | [#771](https://github.com/Rekin226/aquascope/issues/771) | collector-health: bom station catalog failed in the weekly harvest | `help wanted` `collector-health` |
 | `Rekin226/aquascope` | [#55](https://github.com/Rekin226/aquascope/issues/55) | Plugin architecture: third-party collectors & methodologies via entry points | `enhancement` `help wanted` `major feature` |
 | `NVIDIA-NeMo/Automodel` | [#4614](https://github.com/NVIDIA-NeMo/Automodel/issues/4614) | Add sound type annotations: data, evaluation, and objectives | `good first issue` `help wanted` `PoR` |
+| `NVIDIA-NeMo/Automodel` | [#4610](https://github.com/NVIDIA-NeMo/Automodel/issues/4610) | Add sound type annotations: distributed execution and cuda graphs | `good first issue` `help wanted` `PoR` |
 | `NVIDIA-NeMo/Automodel` | [#4612](https://github.com/NVIDIA-NeMo/Automodel/issues/4612) | Add sound type annotations: configuration, launchers, and utilities | `good first issue` `help wanted` `PoR` |
 | `NVIDIA-NeMo/Automodel` | [#4840](https://github.com/NVIDIA-NeMo/Automodel/issues/4840) | Model support request - LTX2.5 | `enhancement` `help wanted` |
 | `FlexMeasures/flexmeasures` | [#601](https://github.com/FlexMeasures/flexmeasures/issues/601) | Support TimescaleDB | `help wanted` `Data` |

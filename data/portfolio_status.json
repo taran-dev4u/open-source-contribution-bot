@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-19T22:00:20.066773+00:00"
+    "timestamp": "2026-11-20T03:00:33.308944+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -17,7 +17,7 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-19T22:00:20.066813+00:00"
+    "timestamp": "2026-11-20T03:00:33.309012+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -26,8 +26,8 @@
     "state": "OPEN",
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": null,
-    "timestamp": "2026-11-19T22:00:20.066834+00:00"
+    "ai_analysis": "### 1. Core Request\nThe maintainer requested fixing the skip message to satisfy CI soft-dependency linting, removing a redundant array allocation inside the Numba inner loop, and cleaning up test coverage by parameterizing low-pass arguments individually, reusing `_synthetic_series`, and tightening trend/seasonal assertions.\n\n---\n\n### 2. Required Modifications\n\n#### `aeon/transformations/series/_stl.py`\nPass `rw` directly instead of allocating `dummy_rw` when calling `_ess_nb` with `use_rw=False`:\n\n```python\n# In _seasonal_smoothing_nb around line 258:\n# Remove: dummy_rw = np.ones(n, dtype=np.float64)\n# Pass rw directly:\n_ess_nb(\n    x=trend_indices,\n    y=low_pass_filtered,\n    rw=rw,\n    span=low_pass,\n    deg=low_pass_deg,\n    jump=low_pass_jump,\n    use_rw=False,\n    out=trend_work,\n)\n```\n\n#### `aeon/transformations/series/tests/test_stl.py`\n\n```python\nimport numpy as np\nimport pytest\nfrom aeon.utils.validation._dependencies import _check_soft_dependencies\n\n\n# 1. Update skip condition reason\n@pytest.mark.skipif(\n    not _check_soft_dependencies(\"statsmodels\", severity=\"none\"),",
+    "timestamp": "2026-11-20T03:00:33.309056+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -37,7 +37,7 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-19T22:00:20.066852+00:00"
+    "timestamp": "2026-11-20T03:00:33.309093+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -47,6 +47,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-19T22:00:20.066870+00:00"
+    "timestamp": "2026-11-20T03:00:33.309129+00:00"
   }
 ]

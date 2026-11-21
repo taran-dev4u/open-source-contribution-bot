@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-21T12:16:29.917493+00:00"
+    "timestamp": "2026-11-21T20:24:03.008431+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -17,7 +17,7 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-21T12:16:29.917564+00:00"
+    "timestamp": "2026-11-21T20:24:03.008519+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -26,8 +26,8 @@
     "state": "OPEN",
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
-    "ai_analysis": null,
-    "timestamp": "2026-11-21T12:16:29.917615+00:00"
+    "ai_analysis": "### 1. Core Request\nThe maintainer needs test cleanup (fixing the CI soft-dependency skip message, parameterizing low-pass parameter tests, and reusing the `_synthetic_series` fixture) and a minor performance tweak in the Numba loop to reuse the existing `rw` buffer instead of allocating `dummy_rw` on every inner iteration.\n\n---\n\n### 2. Code & Test Modifications\n\n#### `aeon/transformations/series/_stl.py`\nIn `_seasonal_smoothing_nb`, remove the `dummy_rw` allocation and pass `rw`:\n\n```python\n# Before:\n# dummy_rw = np.ones(n, dtype=np.float64)\n# _ess_nb(low_pass_buf, n, low_pass, low_pass_deg, low_pass_jump, dummy_rw, False)\n\n# After:\n_ess_nb(low_pass_buf, n, low_pass, low_pass_deg, low_pass_jump, rw, False)\n```\n\n#### `aeon/transformations/series/tests/test_stl.py`\n\nUpdate the skip decorator:\n```python\n@pytest.mark.skipif(\n    not _check_soft_dependencies(\"statsmodels\", severity=\"none\"),\n    reason=\"skip test if required soft dependency statsmodels is not available\",",
+    "timestamp": "2026-11-21T20:24:03.008565+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
@@ -37,7 +37,7 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-21T12:16:29.917657+00:00"
+    "timestamp": "2026-11-21T20:24:03.008608+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -47,6 +47,6 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-21T12:16:29.917727+00:00"
+    "timestamp": "2026-11-21T20:24:03.008648+00:00"
   }
 ]

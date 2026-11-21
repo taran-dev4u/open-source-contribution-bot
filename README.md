@@ -10,7 +10,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-21 12:16:37 UTC`
+- **Last Cloud Execution:** `2026-11-21 20:24:10 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
@@ -27,6 +27,40 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `aeon-toolkit/aeon` | [#4000](https://github.com/aeon-toolkit/aeon/pull/4000) | [BUG] Extrapolate cycle subseries and apply low-pass LOESS in STL | 🟢 `OPEN` | ⚠️ `CHANGES_REQUESTED` | — |
 | `NVIDIA-NeMo/Automodel` | [#4737](https://github.com/NVIDIA-NeMo/Automodel/pull/4737) | refactor(peft): type LoRA expert adapter state and initialization contracts | 🟢 `OPEN` | ✅ `APPROVED` | — |
 | `SeitaBV/timely-beliefs` | [#266](https://github.com/SeitaBV/timely-beliefs/pull/266) | Format intervals as days and time in COPY to prevent overflow on PostgreSQL 12 (#261) | 🟢 `OPEN` | ⚪ `AWAITING` | — |
+
+### 🤖 Gemini AI Review Advisories
+
+#### `aeon-toolkit/aeon#4000`: [BUG] Extrapolate cycle subseries and apply low-pass LOESS in STL
+
+```markdown
+### 1. Core Request
+The maintainer needs test cleanup (fixing the CI soft-dependency skip message, parameterizing low-pass parameter tests, and reusing the `_synthetic_series` fixture) and a minor performance tweak in the Numba loop to reuse the existing `rw` buffer instead of allocating `dummy_rw` on every inner iteration.
+
+---
+
+### 2. Code & Test Modifications
+
+#### `aeon/transformations/series/_stl.py`
+In `_seasonal_smoothing_nb`, remove the `dummy_rw` allocation and pass `rw`:
+
+```python
+# Before:
+# dummy_rw = np.ones(n, dtype=np.float64)
+# _ess_nb(low_pass_buf, n, low_pass, low_pass_deg, low_pass_jump, dummy_rw, False)
+
+# After:
+_ess_nb(low_pass_buf, n, low_pass, low_pass_deg, low_pass_jump, rw, False)
+```
+
+#### `aeon/transformations/series/tests/test_stl.py`
+
+Update the skip decorator:
+```python
+@pytest.mark.skipif(
+    not _check_soft_dependencies("statsmodels", severity="none"),
+    reason="skip test if required soft dependency statsmodels is not available",
+```
+
 
 ---
 

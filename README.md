@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-23 06:26:27 UTC`
+- **Last Cloud Execution:** `2026-11-23 19:57:02 UTC`
 - **Active Monitored Pull Requests:** `4`
 - **Total Successfully Merged:** `1`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `9`
+- **Uncontested Issues Scouted:** `10`
 
 ---
 
@@ -49,10 +49,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | Repository | Issue | Title | Labels |
 | :--- | :--- | :--- | :--- |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
+| `Rekin226/aquascope` | [#787](https://github.com/Rekin226/aquascope/issues/787) | Studies that compute on the map: let the Studio run Flood it, Route it, reservoir and land use | `enhancement` `help wanted` `major feature` |
+| `Rekin226/aquascope` | [#806](https://github.com/Rekin226/aquascope/issues/806) | collector-health: greece_openhi station catalog failed in the weekly harvest | `help wanted` `collector-health` |
 | `Rekin226/aquascope` | [#55](https://github.com/Rekin226/aquascope/issues/55) | Plugin architecture: third-party collectors & methodologies via entry points | `enhancement` `help wanted` `major feature` |
-| `Rekin226/aquascope` | [#771](https://github.com/Rekin226/aquascope/issues/771) | collector-health: bom station catalog failed in the weekly harvest | `help wanted` `collector-health` |
-| `NVIDIA-NeMo/Automodel` | [#4610](https://github.com/NVIDIA-NeMo/Automodel/issues/4610) | Add sound type annotations: distributed execution and cuda graphs | `good first issue` `help wanted` `PoR` |
 | `NVIDIA-NeMo/Automodel` | [#4614](https://github.com/NVIDIA-NeMo/Automodel/issues/4614) | Add sound type annotations: data, evaluation, and objectives | `good first issue` `help wanted` `PoR` |
+| `NVIDIA-NeMo/Automodel` | [#4610](https://github.com/NVIDIA-NeMo/Automodel/issues/4610) | Add sound type annotations: distributed execution and cuda graphs | `good first issue` `help wanted` `PoR` |
 | `NVIDIA-NeMo/Automodel` | [#4622](https://github.com/NVIDIA-NeMo/Automodel/issues/4622) | Add sound type annotations: model execution and adapters | `good first issue` `help wanted` `PoR` |
 | `NVIDIA-NeMo/Automodel` | [#4612](https://github.com/NVIDIA-NeMo/Automodel/issues/4612) | Add sound type annotations: configuration, launchers, and utilities | `good first issue` `help wanted` `PoR` |
 | `NVIDIA-NeMo/Automodel` | [#4840](https://github.com/NVIDIA-NeMo/Automodel/issues/4840) | Model support request - LTX2.5 | `enhancement` `help wanted` |

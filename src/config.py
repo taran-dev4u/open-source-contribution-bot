@@ -67,13 +67,6 @@ class BotConfig:
                 default_branch="main",
             ),
             MonitoredPR(
-                upstream_repo="NVIDIA-NeMo/Automodel",
-                fork_repo="taran-dev4u/Automodel",
-                pr_number=4737,
-                head_branch="refactor/peft-lora-experts-types",
-                default_branch="main",
-            ),
-            MonitoredPR(
                 upstream_repo="SeitaBV/timely-beliefs",
                 fork_repo="taran-dev4u/timely-beliefs",
                 pr_number=266,

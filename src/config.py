@@ -73,6 +73,13 @@ class BotConfig:
                 head_branch="fix/copy-interval-overflow-pg12",
                 default_branch="main",
             ),
+            MonitoredPR(
+                upstream_repo="NVIDIA-NeMo/Automodel",
+                fork_repo="taran-dev4u/Automodel",
+                pr_number=4908,
+                head_branch="refactor/distributed-thd-and-tp-replicas-types",
+                default_branch="main",
+            ),
         ]
     )
 

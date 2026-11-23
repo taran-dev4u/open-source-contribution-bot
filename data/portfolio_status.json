@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-22T23:23:33.547447+00:00"
+    "timestamp": "2026-11-23T06:26:18.653202+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -17,7 +17,7 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-22T23:23:33.547485+00:00"
+    "timestamp": "2026-11-23T06:26:18.653259+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -27,17 +27,7 @@
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-22T23:23:33.547499+00:00"
-  },
-  {
-    "repo": "NVIDIA-NeMo/Automodel",
-    "pr": 4737,
-    "title": "refactor(peft): type LoRA expert adapter state and initialization contracts",
-    "state": "MERGED",
-    "review": "None",
-    "fork_synced": true,
-    "ai_analysis": null,
-    "timestamp": "2026-11-22T23:23:33.547511+00:00"
+    "timestamp": "2026-11-23T06:26:18.653296+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -47,6 +37,16 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-22T23:23:33.547522+00:00"
+    "timestamp": "2026-11-23T06:26:18.653327+00:00"
+  },
+  {
+    "repo": "NVIDIA-NeMo/Automodel",
+    "pr": 4886,
+    "title": "refactor(distributed): sound type annotations for tensor and grad utils",
+    "state": "MERGED",
+    "review": "None",
+    "fork_synced": true,
+    "ai_analysis": null,
+    "timestamp": "2026-11-23T06:26:18.653360+00:00"
   }
 ]

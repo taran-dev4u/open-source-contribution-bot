@@ -7,7 +7,7 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-23T19:56:50.669775+00:00"
+    "timestamp": "2026-11-24T04:41:29.587687+00:00"
   },
   {
     "repo": "docling-project/docling",
@@ -17,7 +17,7 @@
     "review": "APPROVED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-23T19:56:50.669820+00:00"
+    "timestamp": "2026-11-24T04:41:29.587749+00:00"
   },
   {
     "repo": "aeon-toolkit/aeon",
@@ -27,7 +27,7 @@
     "review": "CHANGES_REQUESTED",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-23T19:56:50.669841+00:00"
+    "timestamp": "2026-11-24T04:41:29.587800+00:00"
   },
   {
     "repo": "SeitaBV/timely-beliefs",
@@ -37,16 +37,16 @@
     "review": "None",
     "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-23T19:56:50.669863+00:00"
+    "timestamp": "2026-11-24T04:41:29.587838+00:00"
   },
   {
     "repo": "NVIDIA-NeMo/Automodel",
-    "pr": 4886,
-    "title": "refactor(distributed): sound type annotations for tensor and grad utils",
-    "state": "MERGED",
-    "review": "None",
-    "fork_synced": true,
+    "pr": 4908,
+    "title": "refactor(distributed): sound type annotations for thd_utils and tp_replicas",
+    "state": "OPEN",
+    "review": "COMMENTED",
+    "fork_synced": false,
     "ai_analysis": null,
-    "timestamp": "2026-11-23T19:56:50.669881+00:00"
+    "timestamp": "2026-11-24T04:41:29.587876+00:00"
   }
 ]

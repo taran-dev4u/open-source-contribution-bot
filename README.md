@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-24 04:41:38 UTC`
+- **Last Cloud Execution:** `2026-11-24 17:09:52 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `10`
+- **Uncontested Issues Scouted:** `9`
 
 ---
 
@@ -50,7 +50,6 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | :--- | :--- | :--- | :--- |
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#442](https://github.com/Rekin226/aquascope/issues/442) | Reference plans wanted: bring a basin you know, especially outside the US, UK and France | `help wanted` `good first issue` `methodology` |
-| `Rekin226/aquascope` | [#787](https://github.com/Rekin226/aquascope/issues/787) | Studies that compute on the map: let the Studio run Flood it, Route it, reservoir and land use | `enhancement` `help wanted` `major feature` |
 | `Rekin226/aquascope` | [#806](https://github.com/Rekin226/aquascope/issues/806) | collector-health: greece_openhi station catalog failed in the weekly harvest | `help wanted` `collector-health` |
 | `Rekin226/aquascope` | [#55](https://github.com/Rekin226/aquascope/issues/55) | Plugin architecture: third-party collectors & methodologies via entry points | `enhancement` `help wanted` `major feature` |
 | `NVIDIA-NeMo/Automodel` | [#4614](https://github.com/NVIDIA-NeMo/Automodel/issues/4614) | Add sound type annotations: data, evaluation, and objectives | `good first issue` `help wanted` `PoR` |

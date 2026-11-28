@@ -10,11 +10,11 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 
 ## 📊 Real-Time Portfolio Summary
 
-- **Last Cloud Execution:** `2026-11-28 09:55:43 UTC`
+- **Last Cloud Execution:** `2026-11-28 18:00:55 UTC`
 - **Active Monitored Pull Requests:** `5`
 - **Total Successfully Merged:** `0`
 - **Upstream Forks Synchronized:** `7` (Synced: `7`, Up-to-Date: `0`)
-- **Uncontested Issues Scouted:** `9`
+- **Uncontested Issues Scouted:** `10`
 
 ---
 
@@ -51,6 +51,7 @@ Autonomous open-source portfolio maintenance, upstream synchronization, and issu
 | `Rekin226/aquascope` | [#446](https://github.com/Rekin226/aquascope/issues/446) | Survey: which African and Southeast Asian agencies publish river gauge data we can actually call? | `documentation` `help wanted` `good first issue` |
 | `Rekin226/aquascope` | [#442](https://github.com/Rekin226/aquascope/issues/442) | Reference plans wanted: bring a basin you know, especially outside the US, UK and France | `help wanted` `good first issue` `methodology` |
 | `Rekin226/aquascope` | [#377](https://github.com/Rekin226/aquascope/issues/377) | [Epic] The evidence layer: carry data quality from the agency to the report | `enhancement` `help wanted` `major feature` |
+| `Rekin226/aquascope` | [#375](https://github.com/Rekin226/aquascope/issues/375) | assess_site judges records by length alone: give SiteContext a quality half | `enhancement` `help wanted` `good second issue` |
 | `Rekin226/aquascope` | [#381](https://github.com/Rekin226/aquascope/issues/381) | A defensible refusal scores the same as a wrong plan, and it is deciding the leaderboard | `enhancement` `help wanted` `testing` |
 | `Rekin226/aquascope` | [#787](https://github.com/Rekin226/aquascope/issues/787) | Studies that compute on the map: let the Studio run Flood it, Route it, reservoir and land use | `enhancement` `help wanted` `major feature` |
 | `NVIDIA-NeMo/Automodel` | [#4614](https://github.com/NVIDIA-NeMo/Automodel/issues/4614) | Add sound type annotations: data, evaluation, and objectives | `good first issue` `help wanted` `PoR` |
